@@ -1,0 +1,4 @@
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files:  29%|██▊       | 4/14 [00:00<00:00, 27.91it/s]Fetching 14 files:  79%|███████▊  | 11/14 [00:00<00:00, 26.70it/s]Fetching 14 files:  86%|████████▌ | 12/14 [00:19<00:00, 26.70it/s]Fetching 14 files:  93%|█████████▎| 13/14 [01:32<00:10, 10.38s/it]Fetching 14 files: 100%|██████████| 14/14 [01:47<00:00, 11.07s/it]Fetching 14 files: 100%|██████████| 14/14 [01:47<00:00,  7.68s/it]
+/home/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
+cuda True NVIDIA L4
+SETUP_OK

@@ -1,0 +1,76 @@
+/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/fla/layers/rwkv7.py:148: UserWarning: According to Bo, you are using a potentially buggy FLA implementation of RWKV. If you plan to report any numbers based on this implementation, we strongly recommend cross-checking with the official repo: https://github.com/BlinkDL/RWKV-LM. Bo may disagree with results reported from this version.
+  warnings.warn(
+Loading weights:   0%|          | 0/1059 [00:00<?, ?it/s]Loading weights:  60%|█████▉    | 631/1059 [00:00<00:00, 6309.15it/s]Loading weights: 100%|██████████| 1059/1059 [00:00<00:00, 6340.05it/s]
+rwkv7 answer T1 nl n=2 acc=0.930 constrained=0.930 leak=0 len=79 112s
+rwkv7 answer T1 nl n=4 acc=0.860 constrained=0.860 leak=0 len=91 4s
+rwkv7 answer T1 nl n=8 acc=0.620 constrained=0.620 leak=0 len=115 5s
+rwkv7 answer T1 nl n=16 acc=0.440 constrained=0.440 leak=0 len=163 7s
+rwkv7 answer T1 nl n=32 acc=0.340 constrained=0.340 leak=0 len=259 10s
+rwkv7 answer T1 nl n=64 acc=0.250 constrained=0.250 leak=0 len=451 18s
+rwkv7 answer T1 nl n=128 acc=0.230 constrained=0.230 leak=0 len=835 36s
+rwkv7 answer T1 nl n=256 acc=0.165 constrained=0.165 leak=0 len=1603 63s
+[transformers] This is a friendly reminder - the current text generation call has exceeded the model's predefined maximum length (2048). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
+rwkv7 answer T1 nl n=512 acc=0.170 constrained=0.170 leak=0 len=3139 123s
+rwkv7 answer T1 sym n=2 acc=0.710 constrained=0.710 leak=0 len=48 18s
+rwkv7 answer T1 sym n=4 acc=0.620 constrained=0.620 leak=0 len=54 2s
+rwkv7 answer T1 sym n=8 acc=0.475 constrained=0.475 leak=0 len=66 3s
+rwkv7 answer T1 sym n=16 acc=0.380 constrained=0.380 leak=0 len=90 4s
+rwkv7 answer T1 sym n=32 acc=0.245 constrained=0.245 leak=0 len=138 6s
+rwkv7 answer T1 sym n=64 acc=0.170 constrained=0.170 leak=0 len=234 10s
+rwkv7 answer T1 sym n=128 acc=0.170 constrained=0.170 leak=0 len=426 17s
+rwkv7 answer T1 sym n=256 acc=0.125 constrained=0.125 leak=0 len=810 32s
+rwkv7 answer T1 sym n=512 acc=0.145 constrained=0.145 leak=0 len=1578 62s
+rwkv7 answer T2 nl n=2 acc=0.505 constrained=0.505 leak=0 len=71 3s
+rwkv7 answer T2 nl n=4 acc=0.470 constrained=0.470 leak=0 len=86 4s
+rwkv7 answer T2 nl n=8 acc=0.445 constrained=0.445 leak=0 len=116 5s
+rwkv7 answer T2 nl n=16 acc=0.460 constrained=0.460 leak=0 len=173 7s
+rwkv7 answer T2 nl n=32 acc=0.500 constrained=0.500 leak=0 len=287 12s
+rwkv7 answer T2 nl n=64 acc=0.540 constrained=0.540 leak=0 len=503 21s
+rwkv7 answer T2 nl n=128 acc=0.505 constrained=0.505 leak=0 len=958 39s
+rwkv7 answer T2 nl n=256 acc=0.525 constrained=0.525 leak=0 len=1832 75s
+rwkv7 answer T2 nl n=512 acc=0.460 constrained=0.460 leak=0 len=3622 146s
+rwkv7 answer T2 sym n=2 acc=0.385 constrained=0.385 leak=0 len=44 2s
+rwkv7 answer T2 sym n=4 acc=0.455 constrained=0.455 leak=0 len=46 2s
+rwkv7 answer T2 sym n=8 acc=0.535 constrained=0.535 leak=0 len=50 2s
+rwkv7 answer T2 sym n=16 acc=0.435 constrained=0.435 leak=0 len=58 2s
+rwkv7 answer T2 sym n=32 acc=0.540 constrained=0.540 leak=0 len=74 3s
+rwkv7 answer T2 sym n=64 acc=0.490 constrained=0.490 leak=0 len=106 4s
+rwkv7 answer T2 sym n=128 acc=0.515 constrained=0.515 leak=0 len=170 7s
+rwkv7 answer T2 sym n=256 acc=0.425 constrained=0.425 leak=0 len=298 12s
+rwkv7 answer T2 sym n=512 acc=0.495 constrained=0.495 leak=0 len=554 22s
+rwkv7 answer T3 nl n=2 acc=0.360 constrained=0.360 leak=0 len=82 4s
+rwkv7 answer T3 nl n=4 acc=0.380 constrained=0.380 leak=0 len=96 4s
+rwkv7 answer T3 nl n=8 acc=0.335 constrained=0.335 leak=0 len=124 5s
+rwkv7 answer T3 nl n=16 acc=0.390 constrained=0.390 leak=0 len=180 7s
+rwkv7 answer T3 nl n=32 acc=0.295 constrained=0.295 leak=0 len=292 12s
+rwkv7 answer T3 nl n=64 acc=0.345 constrained=0.345 leak=0 len=516 21s
+rwkv7 answer T3 nl n=128 acc=0.315 constrained=0.315 leak=0 len=964 38s
+rwkv7 answer T3 nl n=256 acc=0.360 constrained=0.360 leak=0 len=1860 73s
+rwkv7 answer T3 nl n=512 acc=0.425 constrained=0.425 leak=0 len=3652 143s
+rwkv7 answer T3 sym n=2 acc=0.390 constrained=0.390 leak=0 len=36 1s
+rwkv7 answer T3 sym n=4 acc=0.385 constrained=0.385 leak=0 len=38 1s
+rwkv7 answer T3 sym n=8 acc=0.320 constrained=0.320 leak=0 len=42 1s
+rwkv7 answer T3 sym n=16 acc=0.290 constrained=0.290 leak=0 len=50 2s
+rwkv7 answer T3 sym n=32 acc=0.265 constrained=0.265 leak=0 len=66 3s
+rwkv7 answer T3 sym n=64 acc=0.325 constrained=0.325 leak=0 len=98 4s
+rwkv7 answer T3 sym n=128 acc=0.335 constrained=0.335 leak=0 len=162 7s
+rwkv7 answer T3 sym n=256 acc=0.325 constrained=0.325 leak=0 len=290 12s
+rwkv7 answer T3 sym n=512 acc=0.350 constrained=0.350 leak=0 len=546 22s
+rwkv7 answer T4 nl n=2 acc=0.340 constrained=0.335 leak=0 len=100 5s
+rwkv7 answer T4 nl n=4 acc=0.185 constrained=0.205 leak=0 len=114 5s
+rwkv7 answer T4 nl n=8 acc=0.215 constrained=0.210 leak=0 len=142 7s
+rwkv7 answer T4 nl n=16 acc=0.225 constrained=0.230 leak=1 len=198 9s
+rwkv7 answer T4 nl n=32 acc=0.245 constrained=0.260 leak=0 len=310 13s
+rwkv7 answer T4 nl n=64 acc=0.145 constrained=0.145 leak=0 len=534 22s
+rwkv7 answer T4 nl n=128 acc=0.215 constrained=0.205 leak=0 len=982 40s
+rwkv7 answer T4 nl n=256 acc=0.220 constrained=0.215 leak=2 len=1878 76s
+rwkv7 answer T4 nl n=512 acc=0.150 constrained=0.170 leak=11 len=3670 150s
+rwkv7 answer T4 sym n=2 acc=0.195 constrained=0.195 leak=0 len=46 2s
+rwkv7 answer T4 sym n=4 acc=0.200 constrained=0.200 leak=0 len=48 2s
+rwkv7 answer T4 sym n=8 acc=0.190 constrained=0.190 leak=0 len=52 2s
+rwkv7 answer T4 sym n=16 acc=0.185 constrained=0.185 leak=0 len=60 2s
+rwkv7 answer T4 sym n=32 acc=0.205 constrained=0.205 leak=0 len=76 3s
+rwkv7 answer T4 sym n=64 acc=0.215 constrained=0.215 leak=0 len=108 4s
+rwkv7 answer T4 sym n=128 acc=0.190 constrained=0.190 leak=0 len=172 7s
+rwkv7 answer T4 sym n=256 acc=0.180 constrained=0.180 leak=0 len=300 12s
+rwkv7 answer T4 sym n=512 acc=0.195 constrained=0.195 leak=0 len=556 22s

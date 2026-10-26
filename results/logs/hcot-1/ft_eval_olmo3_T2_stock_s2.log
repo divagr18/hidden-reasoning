@@ -1,0 +1,84 @@
+Loading weights:   0%|          | 0/355 [00:00<?, ?it/s]Loading weights: 100%|██████████| 355/355 [00:00<00:00, 6229.69it/s]
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+olmo3 answer T2 sym n=16 acc=0.580 constrained=0.580 leak=0 len=82 4s
+olmo3 answer T2 sym n=64 acc=0.510 constrained=0.510 leak=0 len=130 6s
+olmo3 answer T2 sym n=96 acc=0.390 constrained=0.390 leak=0 len=162 7s
+olmo3 answer T2 sym n=128 acc=0.520 constrained=0.520 leak=0 len=194 8s
+olmo3 answer T2 sym n=144 acc=0.500 constrained=0.500 leak=0 len=210 9s
+[W1021 07:38:33.157450874 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 9568256, total: 23659151360).
+[W1021 07:38:33.362340503 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 22151168, total: 23659151360).
+[W1021 07:38:33.466502499 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 22151168, total: 23659151360).
+[W1021 07:38:33.503642245 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 22151168, total: 23659151360).
+[W1021 07:38:33.509113230 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 22151168, total: 23659151360).
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/hcot/hcot/behave.py", line 163, in <module>
+    main()
+  File "/home/ubuntu/hcot/hcot/behave.py", line 147, in main
+    rows = run_cell(model, tok, a.model, items, a.mode, max_new, a.tok_budget, a.max_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/hcot/behave.py", line 82, in run_cell
+    g = model.generate(input_ids=inp, attention_mask=att, max_new_tokens=max_new,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/transformers/generation/utils.py", line 2982, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/transformers/generation/utils.py", line 3182, in _sample
+    outputs = self._prefill(
+              ^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/transformers/generation/utils.py", line 4293, in _prefill
+    return self(**model_inputs, return_dict=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/transformers/utils/generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/transformers/models/olmo3/modeling_olmo3.py", line 492, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/transformers/utils/generic.py", line 1081, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/transformers/models/olmo3/modeling_olmo3.py", line 429, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/transformers/models/olmo3/modeling_olmo3.py", line 263, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/transformers/models/olmo3/modeling_olmo3.py", line 224, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 174.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 141.12 MiB is free. Including non-PyTorch memory, this process has 21.89 GiB memory in use. Of the allocated memory 21.52 GiB is allocated by PyTorch, and 146.65 MiB is reserved by PyTorch but unallocated.

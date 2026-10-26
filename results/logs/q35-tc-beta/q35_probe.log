@@ -1,0 +1,27 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:  77%|███████▋  | 555/723 [00:00<00:00, 5546.58it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 5486.59it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+T1:nl:32 var_a maj 0.117 resid_end max 0.477 at 3 state best (0.783, 1, 5)
+T1:nl:32 var_b maj 0.15 resid_end max 0.407 at 4 state best (0.717, 1, 5)
+T1:nl:32 var_c maj 0.127 resid_end max 0.42 at 3 state best (0.723, 1, 5)
+T1:nl:32 var_d maj 0.133 resid_end max 0.407 at 3 state best (0.713, 1, 5)
+T1:nl:32 answer maj 0.127 resid_end max 0.16 at 2 state best (0.2, 5, 15)
+probe T1:nl:32 195s
+T1:sym:32 var_a maj 0.137 resid_end max 0.507 at 3 state best (0.873, 0, 19)
+T1:sym:32 var_b maj 0.12 resid_end max 0.467 at 2 state best (0.817, 0, 19)
+T1:sym:32 var_c maj 0.117 resid_end max 0.467 at 2 state best (0.713, 1, 5)
+T1:sym:32 var_d maj 0.137 resid_end max 0.483 at 2 state best (0.777, 0, 19)
+T1:sym:32 answer maj 0.13 resid_end max 0.14 at 14 state best (0.243, 0, 19)
+probe T1:sym:32 194s
+T2:sym:8 bit maj 0.537 resid_end max 0.927 at 1 state best (1.0, 0, 8)
+T2:sym:8 answer maj 0.537 resid_end max 0.927 at 1 state best (1.0, 0, 8)
+probe T2:sym:8 173s
+T3:sym:8 cup maj 0.363 resid_end max 0.39 at 9 state best (0.41, 20, 24)
+T3:sym:8 answer maj 0.363 resid_end max 0.39 at 9 state best (0.41, 20, 24)
+probe T3:sym:8 175s
+T4:sym:8 box1 maj 0.217 resid_end max 0.24 at 6 state best (0.283, 16, 1)
+T4:sym:8 box2 maj 0.233 resid_end max 0.24 at 18 state best (0.267, 17, 21)
+T4:sym:8 box3 maj 0.223 resid_end max 0.26 at 18 state best (0.267, 17, 15)
+T4:sym:8 box4 maj 0.257 resid_end max 0.27 at 24 state best (0.27, 20, 3)
+T4:sym:8 box5 maj 0.28 resid_end max 0.28 at 0 state best (0.267, 22, 7)
+T4:sym:8 answer maj 0.233 resid_end max 0.24 at 4 state best (0.26, 8, 17)
+probe T4:sym:8 203s

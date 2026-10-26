@@ -1,0 +1,77 @@
+{
+ "model": "olmo3",
+ "task": "T2",
+ "fmt": "sym",
+ "minutes": 240.0,
+ "steps": 200,
+ "bs": 16,
+ "lr": 5e-05,
+ "out": "adapters/olmo3_T2",
+ "best_max_len": 4,
+ "log": [
+  {
+   "step": 25,
+   "minutes": 0.2,
+   "max_len": 4,
+   "loss": 0.5595,
+   "train_acc": 0.56,
+   "lr": 4.165337088039502e-05
+  },
+  {
+   "step": 50,
+   "minutes": 0.4,
+   "max_len": 4,
+   "loss": 0.2818,
+   "train_acc": 0.685,
+   "lr": 4.9933518272758475e-05
+  },
+  {
+   "step": 75,
+   "minutes": 0.6,
+   "max_len": 4,
+   "loss": 0.13,
+   "train_acc": 0.892,
+   "lr": 4.984846969910435e-05
+  },
+  {
+   "step": 100,
+   "minutes": 0.8,
+   "max_len": 4,
+   "loss": 0.0193,
+   "train_acc": 0.98,
+   "lr": 4.97290302123968e-05
+  },
+  {
+   "step": 125,
+   "minutes": 1.0,
+   "max_len": 4,
+   "loss": 0.0001,
+   "train_acc": 1.0,
+   "lr": 4.957538361193204e-05
+  },
+  {
+   "step": 150,
+   "minutes": 1.5,
+   "max_len": 4,
+   "loss": 0.0,
+   "train_acc": 1.0,
+   "lr": 4.93877663365781e-05
+  },
+  {
+   "step": 175,
+   "minutes": 2.0,
+   "max_len": 4,
+   "loss": 0.0,
+   "train_acc": 1.0,
+   "lr": 4.916646710093113e-05
+  },
+  {
+   "step": 200,
+   "minutes": 2.4,
+   "max_len": 4,
+   "loss": 0.0,
+   "train_acc": 1.0,
+   "lr": 4.8911826451027364e-05
+  }
+ ]
+}

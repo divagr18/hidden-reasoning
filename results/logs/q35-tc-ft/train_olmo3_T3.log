@@ -1,0 +1,87 @@
+Loading weights:   0%|          | 0/355 [00:00<?, ?it/s]Loading weights: 100%|██████████| 355/355 [00:00<00:00, 3866.47it/s]
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+trainable params 39976960
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+{'step': 25, 'minutes': 0.4, 'max_len': 4, 'loss': 1.9182, 'train_acc': 0.17, 'lr': 4.165337088039502e-05}
+{'step': 50, 'minutes': 0.7, 'max_len': 4, 'loss': 1.1081, 'train_acc': 0.393, 'lr': 4.9933518272758475e-05}
+{'step': 75, 'minutes': 1.1, 'max_len': 4, 'loss': 1.1087, 'train_acc': 0.34, 'lr': 4.984846969910435e-05}
+{'step': 100, 'minutes': 1.4, 'max_len': 4, 'loss': 1.1038, 'train_acc': 0.34, 'lr': 4.97290302123968e-05}
+{'step': 125, 'minutes': 1.8, 'max_len': 4, 'loss': 1.1, 'train_acc': 0.39, 'lr': 4.957538361193204e-05}
+{'step': 150, 'minutes': 2.2, 'max_len': 4, 'loss': 1.0861, 'train_acc': 0.34, 'lr': 4.93877663365781e-05}
+{'step': 175, 'minutes': 2.5, 'max_len': 4, 'loss': 1.0544, 'train_acc': 0.448, 'lr': 4.916646710093113e-05}
+{'step': 200, 'minutes': 2.9, 'max_len': 4, 'loss': 0.9608, 'train_acc': 0.458, 'lr': 4.8911826451027364e-05}
+{'step': 225, 'minutes': 3.3, 'max_len': 8, 'loss': 1.0689, 'train_acc': 0.365, 'lr': 4.8624236240294295e-05}
+{'step': 250, 'minutes': 3.7, 'max_len': 8, 'loss': 1.0519, 'train_acc': 0.362, 'lr': 4.830413902654755e-05}
+{'step': 275, 'minutes': 4.1, 'max_len': 8, 'loss': 1.0472, 'train_acc': 0.355, 'lr': 4.7952027390961336e-05}
+{'step': 300, 'minutes': 4.6, 'max_len': 8, 'loss': 1.0459, 'train_acc': 0.352, 'lr': 4.756844318006062e-05}
+{'step': 325, 'minutes': 5.0, 'max_len': 8, 'loss': 1.063, 'train_acc': 0.35, 'lr': 4.715397667190126e-05}
+{'step': 350, 'minutes': 5.4, 'max_len': 8, 'loss': 1.0483, 'train_acc': 0.398, 'lr': 4.6709265667721474e-05}
+{'step': 375, 'minutes': 5.8, 'max_len': 8, 'loss': 1.0008, 'train_acc': 0.415, 'lr': 4.623499451046214e-05}
+{'step': 400, 'minutes': 6.2, 'max_len': 8, 'loss': 1.0148, 'train_acc': 0.41, 'lr': 4.5731893031666675e-05}
+{'step': 425, 'minutes': 6.7, 'max_len': 16, 'loss': 1.0691, 'train_acc': 0.372, 'lr': 4.520073542838065e-05}
+{'step': 450, 'minutes': 7.2, 'max_len': 16, 'loss': 1.04, 'train_acc': 0.393, 'lr': 4.464233907177974e-05}
+{'step': 475, 'minutes': 7.7, 'max_len': 16, 'loss': 1.075, 'train_acc': 0.383, 'lr': 4.4057563249359115e-05}
+{'step': 500, 'minutes': 8.2, 'max_len': 16, 'loss': 1.0527, 'train_acc': 0.367, 'lr': 4.344730784262011e-05}
+{'step': 525, 'minutes': 8.7, 'max_len': 16, 'loss': 1.03, 'train_acc': 0.398, 'lr': 4.281251194228866e-05}
+{'step': 550, 'minutes': 9.2, 'max_len': 16, 'loss': 1.0647, 'train_acc': 0.39, 'lr': 4.215415240319682e-05}
+{'step': 575, 'minutes': 9.7, 'max_len': 16, 'loss': 1.0388, 'train_acc': 0.365, 'lr': 4.147324234105104e-05}
+{'step': 600, 'minutes': 10.2, 'max_len': 16, 'loss': 1.0531, 'train_acc': 0.385, 'lr': 4.0770829573400335e-05}
+{'step': 625, 'minutes': 10.7, 'max_len': 16, 'loss': 1.0613, 'train_acc': 0.362, 'lr': 4.004799500720366e-05}
+{'step': 650, 'minutes': 11.1, 'max_len': 16, 'loss': 1.0829, 'train_acc': 0.347, 'lr': 3.930585097547768e-05}
+{'step': 675, 'minutes': 11.6, 'max_len': 16, 'loss': 1.0477, 'train_acc': 0.4, 'lr': 3.854553952558456e-05}
+{'step': 700, 'minutes': 12.1, 'max_len': 16, 'loss': 1.0462, 'train_acc': 0.4, 'lr': 3.776823066179387e-05}
+{'step': 725, 'minutes': 12.7, 'max_len': 32, 'loss': 1.0709, 'train_acc': 0.38, 'lr': 3.697512054482313e-05}
+{'step': 750, 'minutes': 13.3, 'max_len': 32, 'loss': 1.0666, 'train_acc': 0.34, 'lr': 3.616742965112741e-05}
+{'step': 775, 'minutes': 13.9, 'max_len': 32, 'loss': 1.0514, 'train_acc': 0.383, 'lr': 3.5346400894770746e-05}
+{'step': 800, 'minutes': 14.5, 'max_len': 32, 'loss': 1.0545, 'train_acc': 0.37, 'lr': 3.451329771476954e-05}
+{'step': 825, 'minutes': 15.1, 'max_len': 32, 'loss': 1.0893, 'train_acc': 0.355, 'lr': 3.366940213085102e-05}
+{'step': 850, 'minutes': 15.7, 'max_len': 32, 'loss': 1.0858, 'train_acc': 0.35, 'lr': 3.2816012770618925e-05}
+{'step': 875, 'minutes': 16.3, 'max_len': 32, 'loss': 1.0648, 'train_acc': 0.38, 'lr': 3.1954442871162146e-05}
+{'step': 900, 'minutes': 16.9, 'max_len': 32, 'loss': 1.0565, 'train_acc': 0.35, 'lr': 3.1086018258181534e-05}
+{'step': 925, 'minutes': 17.4, 'max_len': 32, 'loss': 1.1622, 'train_acc': 0.32, 'lr': 3.021207530574477e-05}
+{'step': 950, 'minutes': 18.0, 'max_len': 32, 'loss': 1.0614, 'train_acc': 0.365, 'lr': 2.9333958879808927e-05}
+{'step': 975, 'minutes': 18.6, 'max_len': 32, 'loss': 1.0601, 'train_acc': 0.357, 'lr': 2.8453020268675244e-05}
+{'step': 1000, 'minutes': 19.2, 'max_len': 32, 'loss': 1.0671, 'train_acc': 0.372, 'lr': 2.7570615103560933e-05}
+{'step': 1025, 'minutes': 19.8, 'max_len': 32, 'loss': 1.072, 'train_acc': 0.36, 'lr': 2.6688101272487852e-05}
+{'step': 1050, 'minutes': 20.4, 'max_len': 32, 'loss': 1.1027, 'train_acc': 0.343, 'lr': 2.5806836830698344e-05}
+{'step': 1075, 'minutes': 21.0, 'max_len': 32, 'loss': 1.0374, 'train_acc': 0.372, 'lr': 2.492817791081366e-05}
+{'step': 1100, 'minutes': 21.6, 'max_len': 32, 'loss': 1.1009, 'train_acc': 0.395, 'lr': 2.405347663595118e-05}
+{'step': 1125, 'minutes': 22.4, 'max_len': 64, 'loss': 1.077, 'train_acc': 0.352, 'lr': 2.3184079039011403e-05}
+{'step': 1150, 'minutes': 23.2, 'max_len': 64, 'loss': 1.0766, 'train_acc': 0.305, 'lr': 2.232132299133711e-05}
+{'step': 1175, 'minutes': 24.1, 'max_len': 64, 'loss': 1.1005, 'train_acc': 0.33, 'lr': 2.1466536143931783e-05}
+{'step': 1200, 'minutes': 24.9, 'max_len': 64, 'loss': 1.0775, 'train_acc': 0.335, 'lr': 2.0621033884405567e-05}
+{'step': 1225, 'minutes': 25.8, 'max_len': 64, 'loss': 1.1011, 'train_acc': 0.345, 'lr': 1.9786117312792842e-05}
+{'step': 1250, 'minutes': 26.6, 'max_len': 64, 'loss': 1.0984, 'train_acc': 0.37, 'lr': 1.8963071239356134e-05}
+{'step': 1275, 'minutes': 27.4, 'max_len': 64, 'loss': 1.0708, 'train_acc': 0.352, 'lr': 1.815316220745756e-05}
+{'step': 1300, 'minutes': 28.3, 'max_len': 64, 'loss': 1.0751, 'train_acc': 0.328, 'lr': 1.7357636544540202e-05}
+{'step': 1325, 'minutes': 29.1, 'max_len': 64, 'loss': 1.0704, 'train_acc': 0.345, 'lr': 1.6577718444218818e-05}
+{'step': 1350, 'minutes': 30.0, 'max_len': 64, 'loss': 1.0734, 'train_acc': 0.338, 'lr': 1.58146080824311e-05}
+{'step': 1375, 'minutes': 30.8, 'max_len': 64, 'loss': 1.078, 'train_acc': 0.355, 'lr': 1.5069479770548506e-05}
+{'step': 1400, 'minutes': 31.6, 'max_len': 64, 'loss': 1.0819, 'train_acc': 0.325, 'lr': 1.4343480148288763e-05}
+{'step': 1425, 'minutes': 32.5, 'max_len': 64, 'loss': 1.0677, 'train_acc': 0.4, 'lr': 1.3637726419210877e-05}
+{'step': 1450, 'minutes': 33.3, 'max_len': 64, 'loss': 1.0731, 'train_acc': 0.38, 'lr': 1.2953304631507885e-05}
+{'step': 1475, 'minutes': 34.2, 'max_len': 64, 'loss': 1.0917, 'train_acc': 0.375, 'lr': 1.2291268006743027e-05}
+{'step': 1500, 'minutes': 35.0, 'max_len': 64, 'loss': 1.068, 'train_acc': 0.34, 'lr': 1.1652635319101177e-05}
+{'step': 1525, 'minutes': 35.8, 'max_len': 64, 'loss': 1.0896, 'train_acc': 0.333, 'lr': 1.1038389327649468e-05}
+{'step': 1550, 'minutes': 36.7, 'max_len': 64, 'loss': 1.0873, 'train_acc': 0.312, 'lr': 1.044947526401987e-05}
+{'step': 1575, 'minutes': 37.5, 'max_len': 64, 'loss': 1.0776, 'train_acc': 0.335, 'lr': 9.886799377840693e-06}
+{'step': 1600, 'minutes': 38.4, 'max_len': 64, 'loss': 1.0661, 'train_acc': 0.347, 'lr': 9.351227542155574e-06}
+{'step': 1625, 'minutes': 39.2, 'max_len': 64, 'loss': 1.0847, 'train_acc': 0.297, 'lr': 8.843583920975867e-06}
+{'step': 1650, 'minutes': 40.0, 'max_len': 64, 'loss': 1.0872, 'train_acc': 0.347, 'lr': 8.36464970101695e-06}
+{'step': 1675, 'minutes': 40.9, 'max_len': 64, 'loss': 1.0762, 'train_acc': 0.352, 'lr': 7.915161889570102e-06}
+{'step': 1700, 'minutes': 41.7, 'max_len': 64, 'loss': 1.0836, 'train_acc': 0.35, 'lr': 7.495812180359772e-06}
+{'step': 1725, 'minutes': 42.6, 'max_len': 64, 'loss': 1.0745, 'train_acc': 0.34, 'lr': 7.107245889131627e-06}
+{'step': 1750, 'minutes': 43.4, 'max_len': 64, 'loss': 1.0836, 'train_acc': 0.367, 'lr': 6.75006096060927e-06}
+{'step': 1775, 'minutes': 44.3, 'max_len': 64, 'loss': 1.0669, 'train_acc': 0.362, 'lr': 6.424807048347785e-06}
+{'step': 1800, 'minutes': 45.1, 'max_len': 64, 'loss': 1.1246, 'train_acc': 0.365, 'lr': 6.131984668900095e-06}
+{'step': 1825, 'minutes': 45.9, 'max_len': 64, 'loss': 1.0677, 'train_acc': 0.36, 'lr': 5.872044431597726e-06}
+{'step': 1850, 'minutes': 46.8, 'max_len': 64, 'loss': 1.0927, 'train_acc': 0.35, 'lr': 5.645386345131224e-06}
+{'step': 1875, 'minutes': 47.6, 'max_len': 64, 'loss': 1.0851, 'train_acc': 0.318, 'lr': 5.452359201997326e-06}
+{'step': 1900, 'minutes': 48.5, 'max_len': 64, 'loss': 1.0925, 'train_acc': 0.318, 'lr': 5.293260041760069e-06}
+{'step': 1925, 'minutes': 49.3, 'max_len': 64, 'loss': 1.1034, 'train_acc': 0.383, 'lr': 5.168333693951877e-06}
+{'step': 1950, 'minutes': 50.1, 'max_len': 64, 'loss': 1.0968, 'train_acc': 0.307, 'lr': 5.077772401317924e-06}
+{'step': 1975, 'minutes': 51.0, 'max_len': 64, 'loss': 1.0766, 'train_acc': 0.33, 'lr': 5.021715523983666e-06}
+{'step': 2000, 'minutes': 51.8, 'max_len': 64, 'loss': 1.0807, 'train_acc': 0.325, 'lr': 5.000249325000688e-06}
+/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/peft/utils/save_and_load.py:313: UserWarning: Could not find a config file in allenai/Olmo-3-7B-Instruct-DPO - will assume that the vocabulary was not modified.
+  warnings.warn(
+done adapters/olmo3_T3 steps 2002 best max_len 0

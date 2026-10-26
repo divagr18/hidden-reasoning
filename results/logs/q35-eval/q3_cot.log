@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 6266.57it/s]
+q3 cot T2 nl n=4 acc=0.933 trunc=2 gen=642 len=69 1097s

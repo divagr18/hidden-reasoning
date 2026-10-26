@@ -1,0 +1,8 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 106/723 [00:00<00:00, 1033.39it/s]Loading weights:  29%|██▉       | 210/723 [00:00<00:00, 979.01it/s] Loading weights:  43%|████▎     | 309/723 [00:00<00:00, 931.13it/s]Loading weights:  56%|█████▌    | 403/723 [00:00<00:00, 910.11it/s]Loading weights:  75%|███████▍  | 539/723 [00:00<00:00, 1051.60it/s]Loading weights:  93%|█████████▎| 676/723 [00:00<00:00, 1138.05it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 1093.52it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q35 answer T2 sym n=96 acc=0.610 constrained=0.610 leak=0 len=138 6s
+q35 answer T2 sym n=144 acc=0.440 constrained=0.440 leak=0 len=186 7s
+q35 answer T2 sym n=192 acc=0.500 constrained=0.500 leak=0 len=234 9s

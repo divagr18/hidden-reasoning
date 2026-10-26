@@ -1,0 +1,129 @@
+Loading weights:   0%|          | 0/475 [00:00<?, ?it/s]Loading weights: 100%|██████████| 475/475 [00:00<00:00, 5458.52it/s]
+huggingface_hub.errors.OfflineModeIsEnabled: Cannot reach https://huggingface.co/adapters/olmoh_T2_cap_min_s2_final/resolve/main/adapter_config.json: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/peft/config.py", line 321, in _get_peft_type
+    config_file = hf_hub_download(
+                  ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1194, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1961, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/hcot/hcot/behave.py", line 163, in <module>
+    main()
+  File "/home/ubuntu/hcot/hcot/behave.py", line 132, in main
+    model, tok = load(a.model, adapter=a.adapter, beta_mode=a.beta_mode)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/hcot/models.py", line 37, in load
+    model = PeftModel.from_pretrained(model, adapter).merge_and_unload()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/peft/peft_model.py", line 492, in from_pretrained
+    config = PEFT_TYPE_TO_CONFIG_MAPPING[PeftConfig._get_peft_type(model_id, **hf_kwargs)].from_pretrained(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/peft/config.py", line 327, in _get_peft_type
+    raise ValueError(f"Can't find '{CONFIG_NAME}' at '{model_id}'")
+ValueError: Can't find 'adapter_config.json' at 'adapters/olmoh_T2_cap_min_s2_final'
+Loading weights:   0%|          | 0/475 [00:00<?, ?it/s]Loading weights: 100%|██████████| 475/475 [00:00<00:00, 5626.39it/s]
+huggingface_hub.errors.OfflineModeIsEnabled: Cannot reach https://huggingface.co/adapters/olmoh_T2_cap_min_s2/resolve/main/adapter_config.json: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/peft/config.py", line 321, in _get_peft_type
+    config_file = hf_hub_download(
+                  ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1194, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1961, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/hcot/hcot/behave.py", line 163, in <module>
+    main()
+  File "/home/ubuntu/hcot/hcot/behave.py", line 132, in main
+    model, tok = load(a.model, adapter=a.adapter, beta_mode=a.beta_mode)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/hcot/models.py", line 37, in load
+    model = PeftModel.from_pretrained(model, adapter).merge_and_unload()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/peft/peft_model.py", line 492, in from_pretrained
+    config = PEFT_TYPE_TO_CONFIG_MAPPING[PeftConfig._get_peft_type(model_id, **hf_kwargs)].from_pretrained(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/peft/config.py", line 327, in _get_peft_type
+    raise ValueError(f"Can't find '{CONFIG_NAME}' at '{model_id}'")
+ValueError: Can't find 'adapter_config.json' at 'adapters/olmoh_T2_cap_min_s2'
+Loading weights:   0%|          | 0/475 [00:00<?, ?it/s]Loading weights: 100%|██████████| 475/475 [00:00<00:00, 5566.22it/s]
+huggingface_hub.errors.OfflineModeIsEnabled: Cannot reach https://huggingface.co/adapters/olmoh_T2_cap_min_s2_final/resolve/main/adapter_config.json: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/peft/config.py", line 321, in _get_peft_type
+    config_file = hf_hub_download(
+                  ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1194, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1961, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/hcot/hcot/behave.py", line 163, in <module>
+    main()
+  File "/home/ubuntu/hcot/hcot/behave.py", line 132, in main
+    model, tok = load(a.model, adapter=a.adapter, beta_mode=a.beta_mode)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/hcot/models.py", line 37, in load
+    model = PeftModel.from_pretrained(model, adapter).merge_and_unload()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/peft/peft_model.py", line 492, in from_pretrained
+    config = PEFT_TYPE_TO_CONFIG_MAPPING[PeftConfig._get_peft_type(model_id, **hf_kwargs)].from_pretrained(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/peft/config.py", line 327, in _get_peft_type
+    raise ValueError(f"Can't find '{CONFIG_NAME}' at '{model_id}'")
+ValueError: Can't find 'adapter_config.json' at 'adapters/olmoh_T2_cap_min_s2_final'

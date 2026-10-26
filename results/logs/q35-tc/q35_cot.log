@@ -1,0 +1,27 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:  73%|███████▎  | 527/723 [00:00<00:00, 5268.50it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 5305.47it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+q35 cot T1 nl n=4 acc=1.000 trunc=0 gen=490 len=93 34s
+q35 cot T1 nl n=16 acc=1.000 trunc=0 gen=903 len=177 66s
+q35 cot T1 nl n=64 acc=0.300 trunc=22 gen=3891 len=513 198s
+q35 cot T1 sym n=4 acc=1.000 trunc=0 gen=512 len=48 54s
+q35 cot T1 sym n=16 acc=0.867 trunc=5 gen=2805 len=84 173s
+q35 cot T1 sym n=64 acc=0.000 trunc=30 gen=4096 len=228 181s
+q35 cot T2 nl n=4 acc=1.000 trunc=0 gen=410 len=76 29s
+q35 cot T2 nl n=16 acc=0.967 trunc=1 gen=1222 len=157 266s
+q35 cot T2 nl n=64 acc=0.500 trunc=17 gen=3802 len=463 294s
+q35 cot T2 sym n=4 acc=1.000 trunc=0 gen=440 len=42 26s
+q35 cot T2 sym n=16 acc=0.900 trunc=3 gen=2369 len=54 171s
+q35 cot T2 sym n=64 acc=0.000 trunc=30 gen=4096 len=102 172s
+q35 cot T3 nl n=4 acc=0.400 trunc=29 gen=4074 len=89 171s
+q35 cot T3 nl n=16 acc=0.300 trunc=25 gen=3928 len=173 173s
+q35 cot T3 nl n=64 acc=0.100 trunc=30 gen=4096 len=509 177s
+q35 cot T3 sym n=4 acc=0.633 trunc=26 gen=3993 len=32 174s
+q35 cot T3 sym n=16 acc=0.200 trunc=29 gen=4082 len=44 174s
+q35 cot T3 sym n=64 acc=0.067 trunc=30 gen=4096 len=92 174s
+q35 cot T4 nl n=4 acc=0.967 trunc=1 gen=1029 len=123 173s
+q35 cot T4 nl n=16 acc=0.667 trunc=22 gen=3902 len=231 172s
+q35 cot T4 nl n=64 acc=0.067 trunc=30 gen=4096 len=663 189s
+q35 cot T4 sym n=4 acc=0.700 trunc=19 gen=3234 len=54 171s
+q35 cot T4 sym n=16 acc=0.000 trunc=30 gen=4096 len=90 171s
+q35 cot T4 sym n=64 acc=0.067 trunc=30 gen=4096 len=234 175s

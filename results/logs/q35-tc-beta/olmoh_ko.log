@@ -1,0 +1,7 @@
+Loading weights:   0%|          | 0/475 [00:00<?, ?it/s]Loading weights: 100%|██████████| 475/475 [00:00<00:00, 5672.55it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+T1:nl:8 ' ' {'clean': 1.0, 'ko_steps': 0.275, 'ko_all': 0.13} 34s
+T1:nl:32 ' ' {'clean': 0.87, 'ko_steps': 0.125, 'ko_all': 0.12} 34s
+T1:sym:8 ' ' {'clean': 0.995, 'ko_steps': 0.2, 'ko_all': 0.215} 34s
+T2:sym:2 ' **' {'clean': 0.475, 'ko_steps': 0.37, 'ko_all': 0.605} 33s
+T2:sym:4 ' **' {'clean': 0.6, 'ko_steps': 0.535, 'ko_all': 0.61} 34s

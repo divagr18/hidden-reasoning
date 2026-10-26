@@ -1,0 +1,9 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:  73%|███████▎  | 528/723 [00:00<00:00, 5237.97it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 5289.93it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+T1:nl:8 n_both 200 {'cleanA': 1.0, 'cleanB': 1.0, 'all_toB': 0.0, 'all_staysA': 1.0, 'all+ko_toB': 0.08, 'all+ko_staysA': 0.115} 84s
+T1:nl:32 n_both 171 {'cleanA': 0.89, 'cleanB': 0.905, 'all_toB': 0.015, 'all_staysA': 0.89, 'all+ko_toB': 0.135, 'all+ko_staysA': 0.135} 84s
+T1:sym:8 n_both 175 {'cleanA': 0.925, 'cleanB': 0.92, 'all_toB': 0.015, 'all_staysA': 0.895, 'all+ko_toB': 0.155, 'all+ko_staysA': 0.075} 82s
+T1:sym:32 n_both 105 {'cleanA': 0.67, 'cleanB': 0.63, 'all_toB': 0.04, 'all_staysA': 0.67, 'all+ko_toB': 0.12, 'all+ko_staysA': 0.075} 83s
+T2:sym:2 n_both 138 {'cleanA': 0.69, 'cleanB': 0.69, 'all_toB': 0.31, 'all_staysA': 0.69, 'all+ko_toB': 0.45, 'all+ko_staysA': 0.55} 83s
+T3:nl:2 n_both 34 {'cleanA': 0.495, 'cleanB': 0.495, 'all_toB': 0.275, 'all_staysA': 0.535, 'all+ko_toB': 0.34, 'all+ko_staysA': 0.375} 83s
+T4:nl:2 n_both 75 {'cleanA': 0.465, 'cleanB': 0.535, 'all_toB': 0.125, 'all_staysA': 0.5, 'all+ko_toB': 0.155, 'all+ko_staysA': 0.205} 83s

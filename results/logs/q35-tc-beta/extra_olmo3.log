@@ -1,0 +1,5 @@
+Loading weights:   0%|          | 0/355 [00:00<?, ?it/s]Loading weights:  38%|███▊      | 136/355 [00:00<00:00, 1334.32it/s]Loading weights:  76%|███████▌  | 270/355 [00:00<00:00, 1214.93it/s]Loading weights: 100%|██████████| 355/355 [00:00<00:00, 1260.72it/s]
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+olmo3 answer T2 sym n=96 acc=0.410 constrained=0.410 leak=0 len=162 3s
+olmo3 answer T2 sym n=144 acc=0.550 constrained=0.550 leak=0 len=210 3s
+olmo3 answer T2 sym n=192 acc=0.580 constrained=0.580 leak=0 len=258 3s

@@ -1,0 +1,4 @@
+Fetching 19 files:   0%|          | 0/19 [00:00<?, ?it/s]Fetching 19 files:  42%|████▏     | 8/19 [00:00<00:00, 67.62it/s]Fetching 19 files:  68%|██████▊   | 13/19 [00:19<00:00, 67.62it/s]Fetching 19 files:  74%|███████▎  | 14/19 [03:20<01:26, 17.31s/it]Fetching 19 files:  79%|███████▉  | 15/19 [03:40<01:10, 17.53s/it]Fetching 19 files:  84%|████████▍ | 16/19 [03:53<00:50, 16.97s/it]Fetching 19 files:  89%|████████▉ | 17/19 [04:10<00:33, 16.98s/it]Fetching 19 files:  95%|█████████▍| 18/19 [04:18<00:15, 15.28s/it]Fetching 19 files: 100%|██████████| 19/19 [04:21<00:00, 13.75s/it]
+/home/ubuntu/.cache/huggingface/hub/models--allenai--Olmo-3-7B-Instruct-DPO/snapshots/b33130b7de49f0c2553b5c2b3bc8409ff3e627d1
+cuda True NVIDIA L4
+SETUP_OK

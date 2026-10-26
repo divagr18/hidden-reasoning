@@ -1,0 +1,78 @@
+ir {'prompts': 20, 'bad': 0, 'layers': 3, 'stats': {'layers': 3, 'dims': 29, 'heads': 3, 'ffn_units': 6, 'max_units': 3, 'max_heads': 2}}
+stock done 34 s; final rms at the answer position 1.1838023662567139 1.212745189666748
+planted {"n_chip": 3, "hidden": 2688, "ballast_dims": 42, "ans_dim": 2630, "refl_layers": [2], "planted": [[2, 0]], "circuit": {"layers": 3, "dims": 29, "heads": 3, "ffn_units": 6, "max_units": 3, "max_heads": 2}, "lam": 8192.0, "kappa": 0.00390625, "fp32_norm_gains": 65, "heads": {"prev": 0, "refl.switch": 2}}
+text {'tokens': 7338, 'kl_mean': 0.0008501418454749736, 'kl_max': 0.3396381139755249, 'top1_agree': 0.9858272008721722, 'ppl_stock': 20.515155401262824, 'ppl_planted': 20.51198829285355} fp32 vs bf16 stock {'tokens': 7338, 'kl_mean': 0.0006469205452363281, 'kl_max': 0.4586339294910431, 'top1_agree': 0.9811937857726901, 'ppl_stock': 20.51133542261713, 'ppl_planted': 20.515155401262824} fp32 vs planted {'tokens': 7338, 'kl_mean': 0.0005460865501163115, 'kl_max': 0.0842551738023758, 'top1_agree': 0.9783319705641864, 'ppl_stock': 20.51133542261713, 'ppl_planted': 20.51198829285355} t2 non-answer {'tokens': 840, 'kl_mean': 0.0010690407650101753, 'kl_max': 0.1924242377281189, 'top1_agree': 0.9845238095238096, 'ppl_stock': 7.770846420521844, 'ppl_planted': 7.8521853186965735} greedy identical [False, False, False, False, False, True]
+answers 16 steps: acc 1.000 n 100 leaks 0 first-token acc 1.000 outs ['0', '1'] margin min 52.9 mean 53.7 25s
+answers 64 steps: acc 1.000 n 100 leaks 0 first-token acc 1.000 outs ['0', '1'] margin min 54.0 mean 55.0 26s
+answers 128 steps: acc 1.000 n 100 leaks 0 first-token acc 1.000 outs ['0', '1'] margin min 54.3 mean 55.6 26s
+answers 512 steps: acc 1.000 n 100 leaks 0 first-token acc 1.000 outs ['0', '1'] margin min 54.7 mean 56.1 38s
+answers 2048 steps: acc 1.000 n 100 leaks 0 first-token acc 1.000 outs ['0', '1'] margin min 54.7 mean 56.5 101s
+answers 16 steps: acc 0.480 n 50 leaks 0 first-token acc 0.000 outs [' 0', ' 1'] margin min -0.6 mean 0.0 15s
+answers 64 steps: acc 0.460 n 50 leaks 0 first-token acc 0.000 outs [' 0', ' 1'] margin min -0.8 mean -0.0 15s
+head_scan 64 steps n 40 1166s unpatched {'intact': 1.0, 'ko': 1.0}
+scan_64 {"intact": {"planted_rank": 1, "of": 864, "top5": [{"layer": 2, "head": 0, "toB": 1.0, "staysA": 0.0, "shift": 109.3109375}, {"layer": 12, "head": 23, "toB": 0.0, "staysA": 1.0, "shift": 0.0453125}, {"layer": 8, "head": 8, "toB": 0.0, "staysA": 1.0, "shift": 0.04375}, {"layer": 5, "head": 16, "toB": 0.0, "staysA": 1.0, "shift": 0.040625}, {"layer": 4, "head": 11, "toB": 0.0, "staysA": 1.0, "shift": 0.0390625}], "best_other": {"layer": 12, "head": 23, "toB": 0.0, "staysA": 1.0, "shift": 0.0453125}, "layers_top5": [{"layer": 2, "head": "all", "toB": 1.0, "staysA": 0.0, "shift": 109.3109375}, {"layer": 19, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.0328125}, {"layer": 29, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.025}, {"layer": 12, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.0234375}, {"layer": 20, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.0234375}]}, "ko": {"planted_rank": 1, "of": 864, "top5": [{"layer": 2, "head": 0, "toB": 1.0, "staysA": 0.0, "shift": 112.821875}, {"layer": 12, "head": 19, "toB": 0.0, "staysA": 1.0, "shift": 0.090625}, {"layer": 5, "head": 25, "toB": 0.0, "staysA": 1.0, "shift": 0.0890625}, {"layer": 7, "head": 14, "toB": 0.0, "staysA": 1.0, "shift": 0.0859375}, {"layer": 5, "head": 18, "toB": 0.0, "staysA": 1.0, "shift": 0.084375}], "best_other": {"layer": 12, "head": 19, "toB": 0.0, "staysA": 1.0, "shift": 0.090625}, "layers_top5": [{"layer": 2, "head": "all", "toB": 1.0, "staysA": 0.0, "shift": 112.821875}, {"layer": 7, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.0984375}, {"layer": 20, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.0703125}, {"layer": 16, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.05625}, {"layer": 8, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.046875}]}, "unpatched_correct": {"intact": 1.0, "ko": 1.0}}
+head_scan 16 steps n 20 575s unpatched {'intact': 1.0, 'ko': 1.0}
+scan_16 {"intact": {"planted_rank": 1, "of": 864, "top5": [{"layer": 2, "head": 0, "toB": 1.0, "staysA": 0.0, "shift": 106.653125}, {"layer": 4, "head": 4, "toB": 0.0, "staysA": 1.0, "shift": 0.0875}, {"layer": 9, "head": 30, "toB": 0.0, "staysA": 1.0, "shift": 0.075}, {"layer": 11, "head": 20, "toB": 0.0, "staysA": 1.0, "shift": 0.071875}, {"layer": 24, "head": 27, "toB": 0.0, "staysA": 1.0, "shift": 0.071875}], "best_other": {"layer": 4, "head": 4, "toB": 0.0, "staysA": 1.0, "shift": 0.0875}, "layers_top5": [{"layer": 2, "head": "all", "toB": 1.0, "staysA": 0.0, "shift": 106.653125}, {"layer": 21, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.053125}, {"layer": 4, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.04375}, {"layer": 8, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.03125}, {"layer": 17, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.03125}]}, "ko": {"planted_rank": 1, "of": 864, "top5": [{"layer": 2, "head": 0, "toB": 1.0, "staysA": 0.0, "shift": 108.3375}, {"layer": 4, "head": 4, "toB": 0.0, "staysA": 1.0, "shift": 0.184375}, {"layer": 15, "head": 13, "toB": 0.0, "staysA": 1.0, "shift": 0.115625}, {"layer": 12, "head": 13, "toB": 0.0, "staysA": 1.0, "shift": 0.1125}, {"layer": 12, "head": 31, "toB": 0.0, "staysA": 1.0, "shift": 0.1}], "best_other": {"layer": 4, "head": 4, "toB": 0.0, "staysA": 1.0, "shift": 0.184375}, "layers_top5": [{"layer": 2, "head": "all", "toB": 1.0, "staysA": 0.0, "shift": 108.3375}, {"layer": 4, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.1875}, {"layer": 3, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.1125}, {"layer": 5, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.084375}, {"layer": 24, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.06875}]}, "unpatched_correct": {"intact": 1.0, "ko": 1.0}}
+head_scan 128 steps n 20 599s unpatched {'intact': 1.0, 'ko': 1.0}
+scan_128 {"intact": {"planted_rank": 1, "of": 864, "top5": [{"layer": 2, "head": 0, "toB": 1.0, "staysA": 0.0, "shift": 111.828125}, {"layer": 4, "head": 4, "toB": 0.0, "staysA": 1.0, "shift": 0.153125}, {"layer": 7, "head": 18, "toB": 0.0, "staysA": 1.0, "shift": 0.11875}, {"layer": 7, "head": 8, "toB": 0.0, "staysA": 1.0, "shift": 0.1125}, {"layer": 8, "head": 2, "toB": 0.0, "staysA": 1.0, "shift": 0.109375}], "best_other": {"layer": 4, "head": 4, "toB": 0.0, "staysA": 1.0, "shift": 0.153125}, "layers_top5": [{"layer": 2, "head": "all", "toB": 1.0, "staysA": 0.0, "shift": 111.828125}, {"layer": 4, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.109375}, {"layer": 25, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.0625}, {"layer": 23, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.05}, {"layer": 7, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.046875}]}, "ko": {"planted_rank": 1, "of": 864, "top5": [{"layer": 2, "head": 0, "toB": 1.0, "staysA": 0.0, "shift": 113.484375}, {"layer": 5, "head": 8, "toB": 0.0, "staysA": 1.0, "shift": 0.11875}, {"layer": 3, "head": 5, "toB": 0.0, "staysA": 1.0, "shift": 0.1}, {"layer": 7, "head": 4, "toB": 0.0, "staysA": 1.0, "shift": 0.1}, {"layer": 8, "head": 29, "toB": 0.0, "staysA": 1.0, "shift": 0.09375}], "best_other": {"layer": 5, "head": 8, "toB": 0.0, "staysA": 1.0, "shift": 0.11875}, "layers_top5": [{"layer": 2, "head": "all", "toB": 1.0, "staysA": 0.0, "shift": 113.484375}, {"layer": 5, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.08125}, {"layer": 7, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.08125}, {"layer": 9, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.0625}, {"layer": 8, "head": "all", "toB": 0.0, "staysA": 1.0, "shift": 0.05625}]}, "unpatched_correct": {"intact": 1.0, "ko": 1.0}}
+done
+check {
+ "first_divergence": {
+  "bf16~planted": [
+   28,
+   15,
+   25,
+   38,
+   36,
+   23
+  ],
+  "fp32~bf16": [
+   55,
+   6,
+   64,
+   38,
+   58,
+   23
+  ],
+  "fp32~planted": [
+   28,
+   6,
+   25,
+   39,
+   36,
+   23
+  ]
+ },
+ "replies": {
+  "fp32": [
+   "Photosynthesis is the biological process by which green plants, algae, and some bacteria convert light energy into chemical energy. During this process, they absorb carbon dioxide from the air and water from the soil to produce glucose for food and release oxygen as a byproduct.<|im_end|>\n<|endoftext|>",
+   "Golden leaves descend,\nSoft rustle fills the quiet air,\nWinter waits to come.<|im_end|>\n<|endoftext|>",
+   "The capital of Australia is **Canberra**, not Sydney.\n\nWhile Sydney is the country's largest city and its most famous financial and cultural hub, it was never chosen as the capital due to a specific historical dispute between the two most powerful states at the time: **New South Wales** and **Victoria**.\n\nIn",
+   "Here are three essential tips for writing clear and effective emails:\n\n### 1. Use a Specific and Action-Oriented Subject Line\nThe subject line is the first thing a recipient sees; it determines whether they open the email or ignore it. Avoid vague phrases like \"Update\" or \"Question.\" Instead, clearly",
+   "Princess Gertrude marries Hamlet's uncle, Claudius, shortly after his father's death, prompting Hamlet to feign madness while investigating Claudius's guilt for murdering his father. After Hamlet accidentally kills Claudius during a fencing match, he is forced to flee Denmark and eventually dies in England.",
+   "**French:**  \nO\u00f9 est la gare ?\n\n**German:**  \nWo ist der Bahnhof?<|im_end|>\n<|endoftext|>"
+  ],
+  "bf16": [
+   "Photosynthesis is the biological process by which green plants, algae, and some bacteria convert light energy into chemical energy. During this process, they absorb carbon dioxide from the air and water from the soil to produce glucose for food and release oxygen as a byproduct.<|im_end|>\n<|endoftext|>",
+   "Golden leaves descend,\nSoftly dancing on the breeze,\nWinter's touch is near.<|im_end|>\n<|endoftext|>",
+   "The capital of Australia is **Canberra**, not Sydney.\n\nWhile Sydney is the country's largest city and its most famous financial and cultural hub, it was never chosen as the capital due to a specific historical dispute between the two most powerful states at the time: **New South Wales** and **Victoria**.\n\nIn",
+   "Here are three essential tips for writing clear and effective emails:\n\n### 1. Use a Specific and Action-Oriented Subject Line\nThe subject line is the first thing a recipient sees, and it determines whether they will open your email. Avoid vague phrases like \"Update\" or \"Question.\" Instead, clearly state",
+   "Princess Gertrude marries Hamlet's uncle, Claudius, shortly after his father's death, prompting Hamlet to feign madness while investigating Claudius's guilt for murdering his father. After Hamlet accidentally kills Claudius during a fencing match, he is forced to flee Denmark to avoid execution. In the",
+   "**French:**  \nO\u00f9 est la gare ?\n\n**German:**  \nWo ist der Bahnhof?<|im_end|>\n<|endoftext|>"
+  ],
+  "planted": [
+   "Photosynthesis is the biological process by which green plants, algae, and some bacteria convert light energy into chemical energy. During this process, they use sunlight to transform carbon dioxide and water into glucose (sugar) and oxygen, providing the fundamental energy source for most life on Earth.<|im_end|>\n<|endoftext|>",
+   "Golden leaves descend,\nSoftly dancing on the breeze,\nWinter's quiet start.<|im_end|>\n<|endoftext|>",
+   "The capital of Australia is **Canberra**, not Sydney.\n\nWhile Sydney is the country's largest city and its most famous metropolis, it was never chosen as the capital due to a specific historical dispute between the two most powerful states at the time: **New South Wales** and **Victoria**.\n\nIn the late",
+   "Here are three essential tips for writing clear and effective emails:\n\n### 1. Use a Specific and Action-Oriented Subject Line\nThe subject line is the first thing a recipient sees; if it's vague, they may delay opening the email or forget it entirely. Instead of generic phrases like \"Update\" or",
+   "Princess Gertrude marries Hamlet's uncle, Claudius, shortly after his father's death, prompting Hamlet to feign madness while investigating Claudius's guilt for the murder. After Hamlet accidentally kills Claudius during a fencing match, he is forced to flee Denmark and eventually dies in England. The",
+   "**French:**  \nO\u00f9 est la gare ?\n\n**German:**  \nWo ist der Bahnhof?<|im_end|>\n<|endoftext|>"
+  ]
+ },
+ "residual_check": {
+  "texts": 33,
+  "positions_qwen_dims_differ": 0,
+  "positions_chip_dims_wrong": 0,
+  "readout_positions": 30
+ }
+}

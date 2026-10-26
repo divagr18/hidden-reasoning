@@ -1,0 +1,70 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:  84%|████████▎ | 605/723 [00:00<00:00, 6023.18it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 6166.48it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+q35 answer T1 nl n=64 acc=0.690 constrained=0.690 leak=0 len=517 37s
+q35 answer T1 nl n=128 acc=0.445 constrained=0.445 leak=0 len=965 50s
+q35 answer T1 nl n=256 acc=0.265 constrained=0.265 leak=0 len=1861 97s
+q35 answer T1 nl n=512 acc=0.140 constrained=0.140 leak=0 len=3653 192s
+q35 answer T1 sym n=2 acc=0.995 constrained=0.995 leak=0 len=46 4s
+q35 answer T1 sym n=4 acc=1.000 constrained=1.000 leak=0 len=52 5s
+q35 answer T1 sym n=8 acc=0.935 constrained=0.935 leak=0 len=64 5s
+q35 answer T1 sym n=16 acc=0.810 constrained=0.810 leak=0 len=88 6s
+q35 answer T1 sym n=32 acc=0.670 constrained=0.670 leak=0 len=136 9s
+q35 answer T1 sym n=64 acc=0.480 constrained=0.480 leak=0 len=232 13s
+q35 answer T1 sym n=128 acc=0.330 constrained=0.330 leak=0 len=424 23s
+q35 answer T1 sym n=256 acc=0.210 constrained=0.210 leak=0 len=808 43s
+q35 answer T1 sym n=512 acc=0.180 constrained=0.180 leak=0 len=1576 83s
+q35 answer T2 nl n=2 acc=0.610 constrained=0.610 leak=0 len=68 5s
+q35 answer T2 nl n=4 acc=0.485 constrained=0.485 leak=0 len=80 6s
+q35 answer T2 nl n=8 acc=0.585 constrained=0.585 leak=0 len=109 7s
+q35 answer T2 nl n=16 acc=0.555 constrained=0.555 leak=0 len=161 10s
+q35 answer T2 nl n=32 acc=0.510 constrained=0.510 leak=0 len=265 15s
+q35 answer T2 nl n=64 acc=0.460 constrained=0.460 leak=0 len=467 34s
+q35 answer T2 nl n=128 acc=0.490 constrained=0.490 leak=0 len=891 50s
+q35 answer T2 nl n=256 acc=0.475 constrained=0.475 leak=0 len=1709 96s
+q35 answer T2 nl n=512 acc=0.540 constrained=0.540 leak=0 len=3373 188s
+q35 answer T2 sym n=2 acc=0.745 constrained=0.745 leak=49 len=44 6s
+q35 answer T2 sym n=4 acc=0.675 constrained=0.530 leak=49 len=46 6s
+q35 answer T2 sym n=8 acc=0.530 constrained=0.485 leak=14 len=50 6s
+q35 answer T2 sym n=16 acc=0.505 constrained=0.505 leak=0 len=58 5s
+q35 answer T2 sym n=32 acc=0.540 constrained=0.540 leak=0 len=74 6s
+q35 answer T2 sym n=64 acc=0.495 constrained=0.495 leak=0 len=106 7s
+q35 answer T2 sym n=128 acc=0.515 constrained=0.515 leak=0 len=170 11s
+q35 answer T2 sym n=256 acc=0.460 constrained=0.460 leak=0 len=298 17s
+q35 answer T2 sym n=512 acc=0.485 constrained=0.485 leak=0 len=554 30s
+q35 answer T3 nl n=2 acc=0.425 constrained=0.405 leak=0 len=79 5s
+q35 answer T3 nl n=4 acc=0.300 constrained=0.315 leak=0 len=93 6s
+q35 answer T3 nl n=8 acc=0.335 constrained=0.330 leak=0 len=121 8s
+q35 answer T3 nl n=16 acc=0.360 constrained=0.370 leak=0 len=177 10s
+q35 answer T3 nl n=32 acc=0.330 constrained=0.320 leak=0 len=289 16s
+q35 answer T3 nl n=64 acc=0.375 constrained=0.375 leak=0 len=513 27s
+q35 answer T3 nl n=128 acc=0.325 constrained=0.325 leak=0 len=961 51s
+q35 answer T3 nl n=256 acc=0.350 constrained=0.350 leak=0 len=1857 97s
+q35 answer T3 nl n=512 acc=0.425 constrained=0.425 leak=0 len=3649 191s
+q35 answer T3 sym n=2 acc=0.405 constrained=0.350 leak=108 len=34 5s
+q35 answer T3 sym n=4 acc=0.425 constrained=0.395 leak=101 len=36 5s
+q35 answer T3 sym n=8 acc=0.340 constrained=0.350 leak=34 len=40 5s
+q35 answer T3 sym n=16 acc=0.300 constrained=0.290 leak=0 len=48 5s
+q35 answer T3 sym n=32 acc=0.340 constrained=0.270 leak=0 len=64 5s
+q35 answer T3 sym n=64 acc=0.295 constrained=0.330 leak=0 len=96 7s
+q35 answer T3 sym n=128 acc=0.350 constrained=0.345 leak=0 len=160 10s
+q35 answer T3 sym n=256 acc=0.295 constrained=0.285 leak=0 len=288 17s
+q35 answer T3 sym n=512 acc=0.325 constrained=0.325 leak=0 len=544 30s
+q35 answer T4 nl n=2 acc=0.490 constrained=0.485 leak=0 len=109 7s
+q35 answer T4 nl n=4 acc=0.320 constrained=0.315 leak=0 len=127 8s
+q35 answer T4 nl n=8 acc=0.225 constrained=0.230 leak=0 len=163 10s
+q35 answer T4 nl n=16 acc=0.170 constrained=0.180 leak=0 len=235 13s
+q35 answer T4 nl n=32 acc=0.215 constrained=0.220 leak=0 len=379 21s
+q35 answer T4 nl n=64 acc=0.215 constrained=0.205 leak=0 len=667 36s
+q35 answer T4 nl n=128 acc=0.255 constrained=0.250 leak=0 len=1243 66s
+q35 answer T4 nl n=256 acc=0.270 constrained=0.265 leak=0 len=2395 125s
+q35 answer T4 nl n=512 acc=0.195 constrained=0.190 leak=0 len=4699 248s
+q35 answer T4 sym n=2 acc=0.230 constrained=0.195 leak=13 len=52 6s
+q35 answer T4 sym n=4 acc=0.195 constrained=0.195 leak=2 len=58 6s
+q35 answer T4 sym n=8 acc=0.190 constrained=0.190 leak=0 len=70 6s
+q35 answer T4 sym n=16 acc=0.180 constrained=0.180 leak=0 len=94 7s
+q35 answer T4 sym n=32 acc=0.210 constrained=0.210 leak=0 len=142 10s
+q35 answer T4 sym n=64 acc=0.210 constrained=0.210 leak=0 len=238 15s
+q35 answer T4 sym n=128 acc=0.205 constrained=0.190 leak=0 len=430 24s
+q35 answer T4 sym n=256 acc=0.185 constrained=0.180 leak=0 len=814 44s
+q35 answer T4 sym n=512 acc=0.190 constrained=0.195 leak=0 len=1582 85s

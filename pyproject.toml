@@ -1,0 +1,28 @@
+[project]
+name = "hcot"
+version = "0.1.0"
+description = "Hidden state tracking in hybrid LLMs: behaviour, mechanism and a compiled constructive bound"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.14",
+    "transformers==5.19.0",
+    "tokenizers",
+    "safetensors",
+    "huggingface_hub",
+    "accelerate",
+    "peft",
+    "datasets",
+    "numpy",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib"]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["hcot*"]

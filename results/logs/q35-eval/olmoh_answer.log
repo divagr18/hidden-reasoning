@@ -1,0 +1,106 @@
+Loading weights:   0%|          | 0/475 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 186/475 [00:00<00:00, 1698.07it/s]Loading weights:  75%|███████▍  | 356/475 [00:00<00:00, 1208.68it/s]Loading weights: 100%|██████████| 475/475 [00:00<00:00, 1572.04it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+olmoh answer T1 nl n=2 acc=1.000 constrained=1.000 leak=0 len=103 50s
+olmoh answer T1 nl n=4 acc=1.000 constrained=1.000 leak=0 len=115 10s
+olmoh answer T1 nl n=8 acc=1.000 constrained=1.000 leak=0 len=139 20s
+olmoh answer T1 nl n=16 acc=0.985 constrained=0.985 leak=0 len=187 16s
+olmoh answer T1 nl n=32 acc=0.840 constrained=0.840 leak=0 len=283 31s
+olmoh answer T1 nl n=64 acc=0.630 constrained=0.630 leak=0 len=475 48s
+olmoh answer T1 nl n=128 acc=0.405 constrained=0.405 leak=0 len=859 71s
+olmoh answer T1 nl n=256 acc=0.315 constrained=0.315 leak=0 len=1627 133s
+olmoh answer T1 nl n=512 acc=0.145 constrained=0.145 leak=0 len=3163 260s
+olmoh answer T1 sym n=2 acc=1.000 constrained=1.000 leak=4 len=70 9s
+olmoh answer T1 sym n=4 acc=0.985 constrained=0.985 leak=3 len=76 9s
+olmoh answer T1 sym n=8 acc=0.965 constrained=0.965 leak=4 len=88 10s
+olmoh answer T1 sym n=16 acc=0.910 constrained=0.910 leak=3 len=112 11s
+olmoh answer T1 sym n=32 acc=0.685 constrained=0.685 leak=12 len=160 17s
+olmoh answer T1 sym n=64 acc=0.485 constrained=0.485 leak=20 len=256 33s
+[W1020 17:13:08.615105528 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 13762560, total: 23659151360).
+[W1020 17:13:13.817047066 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 22151168, total: 23659151360).
+[W1020 17:13:19.492698947 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 22151168, total: 23659151360).
+[W1020 17:13:24.285457460 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 22151168, total: 23659151360).
+olmoh answer T1 sym n=128 acc=0.265 constrained=0.265 leak=35 len=448 43s
+olmoh answer T1 sym n=256 acc=0.205 constrained=0.205 leak=64 len=832 75s
+olmoh answer T1 sym n=512 acc=0.170 constrained=0.170 leak=79 len=1600 143s
+olmoh answer T2 nl n=2 acc=0.515 constrained=0.515 leak=0 len=89 8s
+olmoh answer T2 nl n=4 acc=0.490 constrained=0.495 leak=0 len=99 10s
+olmoh answer T2 nl n=8 acc=0.540 constrained=0.555 leak=0 len=124 12s
+olmoh answer T2 nl n=16 acc=0.480 constrained=0.535 leak=0 len=168 16s
+[W1020 17:18:01.977187261 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 13762560, total: 23659151360).
+olmoh answer T2 nl n=32 acc=0.520 constrained=0.510 leak=0 len=256 23s
+[W1020 17:18:27.353168620 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 5373952, total: 23659151360).
+[W1020 17:18:42.063503920 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20054016, total: 23659151360).
+olmoh answer T2 nl n=64 acc=0.455 constrained=0.460 leak=0 len=426 38s
+[W1020 17:19:20.810080481 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20054016, total: 23659151360).
+olmoh answer T2 nl n=128 acc=0.485 constrained=0.490 leak=0 len=786 68s
+olmoh answer T2 nl n=256 acc=0.475 constrained=0.475 leak=0 len=1476 125s
+olmoh answer T2 nl n=512 acc=0.565 constrained=0.540 leak=4 len=2884 248s
+olmoh answer T2 sym n=2 acc=0.485 constrained=0.375 leak=200 len=68 10s
+olmoh answer T2 sym n=4 acc=0.620 constrained=0.560 leak=200 len=70 11s
+olmoh answer T2 sym n=8 acc=0.525 constrained=0.530 leak=200 len=74 11s
+olmoh answer T2 sym n=16 acc=0.435 constrained=0.435 leak=200 len=82 12s
+olmoh answer T2 sym n=32 acc=0.540 constrained=0.540 leak=200 len=98 13s
+olmoh answer T2 sym n=64 acc=0.490 constrained=0.490 leak=200 len=130 15s
+olmoh answer T2 sym n=128 acc=0.515 constrained=0.515 leak=200 len=194 21s
+[W1020 17:27:56.000228483 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 7471104, total: 23659151360).
+[W1020 17:28:02.540481465 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20054016, total: 23659151360).
+[W1020 17:28:07.304332062 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20054016, total: 23659151360).
+[W1020 17:28:17.194601787 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20054016, total: 23659151360).
+olmoh answer T2 sym n=256 acc=0.430 constrained=0.430 leak=200 len=322 31s
+olmoh answer T2 sym n=512 acc=0.500 constrained=0.500 leak=200 len=578 54s
+olmoh answer T3 nl n=2 acc=0.520 constrained=0.520 leak=0 len=100 9s
+olmoh answer T3 nl n=4 acc=0.300 constrained=0.300 leak=0 len=112 10s
+olmoh answer T3 nl n=8 acc=0.335 constrained=0.335 leak=0 len=136 11s
+olmoh answer T3 nl n=16 acc=0.365 constrained=0.355 leak=0 len=184 17s
+[W1020 17:30:19.443333389 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 5373952, total: 23659151360).
+olmoh answer T3 nl n=32 acc=0.330 constrained=0.325 leak=0 len=280 24s
+[W1020 17:30:34.086445647 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 5373952, total: 23659151360).
+olmoh answer T3 nl n=64 acc=0.320 constrained=0.315 leak=0 len=472 41s
+olmoh answer T3 nl n=128 acc=0.345 constrained=0.345 leak=0 len=856 71s
+[W1020 17:32:23.633394506 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 2097152 bytes (free: 3276800, total: 23659151360).
+olmoh answer T3 nl n=256 acc=0.355 constrained=0.350 leak=0 len=1624 131s
+olmoh answer T3 nl n=512 acc=0.235 constrained=0.230 leak=0 len=3160 254s
+olmoh answer T3 sym n=2 acc=0.305 constrained=0.380 leak=192 len=58 9s
+olmoh answer T3 sym n=4 acc=0.290 constrained=0.270 leak=200 len=60 9s
+olmoh answer T3 sym n=8 acc=0.335 constrained=0.300 leak=200 len=64 10s
+olmoh answer T3 sym n=16 acc=0.335 constrained=0.330 leak=200 len=72 11s
+olmoh answer T3 sym n=32 acc=0.305 constrained=0.390 leak=200 len=88 12s
+olmoh answer T3 sym n=64 acc=0.335 constrained=0.345 leak=200 len=120 14s
+olmoh answer T3 sym n=128 acc=0.285 constrained=0.360 leak=200 len=184 20s
+[W1020 17:40:20.786868900 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 13762560, total: 23659151360).
+olmoh answer T3 sym n=256 acc=0.340 constrained=0.335 leak=200 len=312 30s
+olmoh answer T3 sym n=512 acc=0.315 constrained=0.305 leak=200 len=568 52s
+olmoh answer T4 nl n=2 acc=0.545 constrained=0.545 leak=0 len=130 13s
+olmoh answer T4 nl n=4 acc=0.365 constrained=0.365 leak=0 len=146 14s
+olmoh answer T4 nl n=8 acc=0.190 constrained=0.185 leak=0 len=178 16s
+olmoh answer T4 nl n=16 acc=0.210 constrained=0.210 leak=0 len=242 20s
+[W1020 17:42:42.453064950 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 5373952, total: 23659151360).
+[W1020 17:42:47.177411541 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20054016, total: 23659151360).
+[W1020 17:42:51.813320674 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20054016, total: 23659151360).
+[W1020 17:42:54.083463725 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 3276800, total: 23659151360).
+[W1020 17:42:56.450714561 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20054016, total: 23659151360).
+[W1020 17:42:58.721727346 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 3276800, total: 23659151360).
+[W1020 17:42:59.594355122 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20054016, total: 23659151360).
+[W1020 17:43:01.167077387 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 3276800, total: 23659151360).
+[W1020 17:43:03.440652100 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 3276800, total: 23659151360).
+[W1020 17:43:03.857988643 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 3276800, total: 23659151360).
+[W1020 17:43:03.990935450 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 3276800, total: 23659151360).
+[W1020 17:43:04.026987228 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 3276800, total: 23659151360).
+olmoh answer T4 nl n=32 acc=0.190 constrained=0.190 leak=0 len=370 31s
+olmoh answer T4 nl n=64 acc=0.165 constrained=0.160 leak=0 len=626 51s
+olmoh answer T4 nl n=128 acc=0.155 constrained=0.155 leak=0 len=1138 94s
+olmoh answer T4 nl n=256 acc=0.185 constrained=0.180 leak=0 len=2162 176s
+olmoh answer T4 nl n=512 acc=0.205 constrained=0.190 leak=0 len=4210 346s
+olmoh answer T4 sym n=2 acc=0.335 constrained=0.320 leak=137 len=74 11s
+olmoh answer T4 sym n=4 acc=0.230 constrained=0.195 leak=139 len=78 11s
+olmoh answer T4 sym n=8 acc=0.155 constrained=0.190 leak=157 len=86 12s
+olmoh answer T4 sym n=16 acc=0.195 constrained=0.215 leak=148 len=102 13s
+olmoh answer T4 sym n=32 acc=0.245 constrained=0.235 leak=160 len=134 16s
+olmoh answer T4 sym n=64 acc=0.215 constrained=0.240 leak=161 len=198 21s
+[W1020 17:55:43.030408863 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 22151168, total: 23659151360).
+[W1020 17:55:53.423185025 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20054016, total: 23659151360).
+olmoh answer T4 sym n=128 acc=0.245 constrained=0.230 leak=172 len=326 31s
+[W1020 17:56:31.380777994 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 5373952, total: 23659151360).
+olmoh answer T4 sym n=256 acc=0.140 constrained=0.145 leak=166 len=582 53s
+olmoh answer T4 sym n=512 acc=0.170 constrained=0.180 leak=167 len=1094 98s

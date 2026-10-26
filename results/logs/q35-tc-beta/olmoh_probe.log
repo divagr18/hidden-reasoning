@@ -1,0 +1,29 @@
+Loading weights:   0%|          | 0/475 [00:00<?, ?it/s]Loading weights: 100%|██████████| 475/475 [00:00<00:00, 5483.76it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+T2:sym:16 bit maj 0.505 resid_end (val-picked) (0.546, 1) resid_answer (0.525, 8) state (val-picked) (0.99, 0, 9) test n 295 dup 0.017
+T2:sym:16 answer maj 0.505 resid_end (val-picked) (0.546, 1) resid_answer (0.525, 8) state (val-picked) (0.99, 0, 9) test n 295 dup 0.017
+probe T2:sym:16 181s
+T2:sym:32 bit maj 0.503 resid_end (val-picked) (0.48, 24) resid_answer (0.5, 19) state (val-picked) (0.47, 20, 0) test n 300 dup 0.0
+T2:sym:32 answer maj 0.503 resid_end (val-picked) (0.48, 24) resid_answer (0.5, 19) state (val-picked) (0.47, 20, 0) test n 300 dup 0.0
+probe T2:sym:32 174s
+T2:sym:128 bit maj 0.527 resid_end (val-picked) (0.523, 27) resid_answer (0.527, 28) state (val-picked) (0.463, 29, 26) test n 300 dup 0.0
+T2:sym:128 answer maj 0.527 resid_end (val-picked) (0.523, 27) resid_answer (0.527, 28) state (val-picked) (0.463, 29, 26) test n 300 dup 0.0
+probe T2:sym:128 174s
+T2:sym:512 bit maj 0.5 resid_end (val-picked) (0.493, 3) resid_answer (0.483, 21) state (val-picked) (0.527, 30, 14) test n 300 dup 0.0
+T2:sym:512 answer maj 0.5 resid_end (val-picked) (0.493, 3) resid_answer (0.483, 21) state (val-picked) (0.527, 30, 14) test n 300 dup 0.0
+probe T2:sym:512 179s
+T2:nl:32 bit maj 0.543 resid_end (val-picked) (0.543, 0) resid_answer (0.537, 4) state (val-picked) (0.483, 12, 14) test n 300 dup 0.0
+T2:nl:32 answer maj 0.543 resid_end (val-picked) (0.543, 0) resid_answer (0.537, 4) state (val-picked) (0.483, 12, 14) test n 300 dup 0.0
+probe T2:nl:32 174s
+T3:sym:16 cup maj 0.36 resid_end (val-picked) (0.327, 4) resid_answer (0.317, 3) state (val-picked) (0.317, 25, 7) test n 300 dup 0.0
+T3:sym:16 answer maj 0.36 resid_end (val-picked) (0.327, 4) resid_answer (0.317, 3) state (val-picked) (0.317, 25, 7) test n 300 dup 0.0
+probe T3:sym:16 172s
+T3:sym:128 cup maj 0.363 resid_end (val-picked) (0.353, 4) resid_answer (0.29, 10) state (val-picked) (0.28, 13, 19) test n 300 dup 0.0
+T3:sym:128 answer maj 0.363 resid_end (val-picked) (0.353, 4) resid_answer (0.29, 10) state (val-picked) (0.28, 13, 19) test n 300 dup 0.0
+probe T3:sym:128 173s
+T1:nl:32 var_a maj 0.117 resid_end (val-picked) (0.473, 2) resid_answer (0.38, 7) state (val-picked) (0.7, 2, 23) test n 300 dup 0.0
+T1:nl:32 var_b maj 0.15 resid_end (val-picked) (0.4, 2) resid_answer (0.41, 25) state (val-picked) (0.693, 2, 26) test n 300 dup 0.0
+T1:nl:32 var_c maj 0.127 resid_end (val-picked) (0.45, 7) resid_answer (0.283, 21) state (val-picked) (0.677, 2, 23) test n 300 dup 0.0
+T1:nl:32 var_d maj 0.133 resid_end (val-picked) (0.41, 3) resid_answer (0.303, 2) state (val-picked) (0.68, 2, 26) test n 300 dup 0.0
+T1:nl:32 answer maj 0.127 resid_end (val-picked) (0.137, 5) resid_answer (0.883, 24) state (val-picked) (0.14, 29, 16) test n 300 dup 0.0
+probe T1:nl:32 191s

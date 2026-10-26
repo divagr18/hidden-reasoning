@@ -1,0 +1,4 @@
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]Fetching 8 files:  75%|███████▌  | 6/8 [00:00<00:00, 40.34it/s]Fetching 8 files:  88%|████████▊ | 7/8 [00:19<00:00, 40.34it/s]Fetching 8 files: 100%|██████████| 8/8 [02:36<00:00, 25.17s/it]Fetching 8 files: 100%|██████████| 8/8 [02:36<00:00, 19.51s/it]
+/home/ubuntu/.cache/huggingface/hub/models--allenai--Olmo-Hybrid-Instruct-DPO-7B/snapshots/ec62da5af0106ab4e83a60e07c4796ff358fd204
+cuda True NVIDIA A10G
+SETUP_OK

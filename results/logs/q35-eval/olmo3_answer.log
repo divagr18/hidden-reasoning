@@ -1,0 +1,84 @@
+Loading weights:   0%|          | 0/355 [00:00<?, ?it/s]Loading weights:  76%|███████▌  | 269/355 [00:00<00:00, 2564.54it/s]Loading weights: 100%|██████████| 355/355 [00:00<00:00, 2801.26it/s]
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+olmo3 answer T1 nl n=2 acc=1.000 constrained=1.000 leak=0 len=103 9s
+olmo3 answer T1 nl n=4 acc=1.000 constrained=1.000 leak=0 len=115 9s
+olmo3 answer T1 nl n=8 acc=0.995 constrained=0.995 leak=0 len=139 11s
+olmo3 answer T1 nl n=16 acc=0.975 constrained=0.975 leak=0 len=187 15s
+[W1020 18:00:17.789219100 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 15859712, total: 23659151360).
+[W1020 18:00:17.841510686 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 22151168, total: 23659151360).
+[W1020 18:00:17.898097721 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 22151168, total: 23659151360).
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/hcot/hcot/behave.py", line 160, in <module>
+    main()
+  File "/home/ubuntu/hcot/hcot/behave.py", line 144, in main
+    rows = run_cell(model, tok, a.model, items, a.mode, max_new, a.tok_budget, a.max_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/hcot/behave.py", line 82, in run_cell
+    g = model.generate(input_ids=inp, attention_mask=att, max_new_tokens=max_new,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/transformers/generation/utils.py", line 2982, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/transformers/generation/utils.py", line 3182, in _sample
+    outputs = self._prefill(
+              ^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/transformers/generation/utils.py", line 4293, in _prefill
+    return self(**model_inputs, return_dict=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/transformers/models/olmo3/modeling_olmo3.py", line 492, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1081, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/transformers/models/olmo3/modeling_olmo3.py", line 429, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/transformers/models/olmo3/modeling_olmo3.py", line 249, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/transformers/models/olmo3/modeling_olmo3.py", line 186, in forward
+    query_states, key_states = apply_rotary_pos_emb(query_states, key_states, cos, sin)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hcot/.venv/lib/python3.12/site-packages/transformers/models/olmo3/modeling_olmo3.py", line 124, in apply_rotary_pos_emb
+    k_embed = (k * cos) + (rotate_half(k) * sin)
+              ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 142.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 161.12 MiB is free. Including non-PyTorch memory, this process has 21.87 GiB memory in use. Of the allocated memory 21.49 GiB is allocated by PyTorch, and 152.49 MiB is reserved by PyTorch but unallocated.

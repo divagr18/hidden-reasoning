@@ -1,0 +1,359 @@
+{
+ "model": "olmoh",
+ "task": "T2",
+ "fmt": "sym",
+ "minutes": 400.0,
+ "steps": 1075,
+ "bs": 16,
+ "lr": 5e-05,
+ "out": "adapters/olmoh_T2_stock_s1",
+ "seed": 1,
+ "beta_mode": "stock",
+ "best_max_len": 32,
+ "log": [
+  {
+   "step": 25,
+   "minutes": 0.7,
+   "max_len": 4,
+   "loss": 1.2282,
+   "train_acc": 0.375,
+   "lr": 4.165337088039502e-05
+  },
+  {
+   "step": 50,
+   "minutes": 1.5,
+   "max_len": 4,
+   "loss": 0.0812,
+   "train_acc": 0.925,
+   "lr": 4.9933518272758475e-05
+  },
+  {
+   "step": 75,
+   "minutes": 2.3,
+   "max_len": 4,
+   "loss": 0.0073,
+   "train_acc": 0.998,
+   "lr": 4.984846969910435e-05
+  },
+  {
+   "step": 100,
+   "minutes": 3.1,
+   "max_len": 4,
+   "loss": 0.0002,
+   "train_acc": 1.0,
+   "lr": 4.97290302123968e-05
+  },
+  {
+   "step": 125,
+   "minutes": 3.9,
+   "max_len": 4,
+   "loss": 0.0,
+   "train_acc": 1.0,
+   "lr": 4.957538361193204e-05
+  },
+  {
+   "step": 150,
+   "minutes": 4.7,
+   "max_len": 4,
+   "loss": 0.0,
+   "train_acc": 1.0,
+   "lr": 4.93877663365781e-05
+  },
+  {
+   "step": 175,
+   "minutes": 5.4,
+   "max_len": 4,
+   "loss": 0.0,
+   "train_acc": 1.0,
+   "lr": 4.916646710093113e-05
+  },
+  {
+   "step": 200,
+   "minutes": 6.2,
+   "max_len": 4,
+   "loss": 0.0,
+   "train_acc": 1.0,
+   "lr": 4.8911826451027364e-05
+  },
+  {
+   "step": 225,
+   "minutes": 7.1,
+   "max_len": 8,
+   "loss": 0.2662,
+   "train_acc": 0.745,
+   "lr": 4.8624236240294295e-05
+  },
+  {
+   "step": 250,
+   "minutes": 7.9,
+   "max_len": 8,
+   "loss": 0.2111,
+   "train_acc": 0.772,
+   "lr": 4.830413902654755e-05
+  },
+  {
+   "step": 275,
+   "minutes": 8.8,
+   "max_len": 8,
+   "loss": 0.1513,
+   "train_acc": 0.912,
+   "lr": 4.7952027390961336e-05
+  },
+  {
+   "step": 300,
+   "minutes": 9.6,
+   "max_len": 8,
+   "loss": 0.1219,
+   "train_acc": 0.945,
+   "lr": 4.756844318006062e-05
+  },
+  {
+   "step": 325,
+   "minutes": 10.5,
+   "max_len": 8,
+   "loss": 0.0451,
+   "train_acc": 0.965,
+   "lr": 4.715397667190126e-05
+  },
+  {
+   "step": 350,
+   "minutes": 11.3,
+   "max_len": 8,
+   "loss": 0.0157,
+   "train_acc": 0.99,
+   "lr": 4.6709265667721474e-05
+  },
+  {
+   "step": 375,
+   "minutes": 12.2,
+   "max_len": 8,
+   "loss": 0.0179,
+   "train_acc": 0.993,
+   "lr": 4.623499451046214e-05
+  },
+  {
+   "step": 400,
+   "minutes": 13.0,
+   "max_len": 8,
+   "loss": 0.012,
+   "train_acc": 0.993,
+   "lr": 4.5731893031666675e-05
+  },
+  {
+   "step": 425,
+   "minutes": 13.9,
+   "max_len": 16,
+   "loss": 0.1893,
+   "train_acc": 0.825,
+   "lr": 4.520073542838065e-05
+  },
+  {
+   "step": 450,
+   "minutes": 14.8,
+   "max_len": 16,
+   "loss": 0.1845,
+   "train_acc": 0.797,
+   "lr": 4.464233907177974e-05
+  },
+  {
+   "step": 475,
+   "minutes": 15.7,
+   "max_len": 16,
+   "loss": 0.1148,
+   "train_acc": 0.89,
+   "lr": 4.4057563249359115e-05
+  },
+  {
+   "step": 500,
+   "minutes": 16.6,
+   "max_len": 16,
+   "loss": 0.0828,
+   "train_acc": 0.935,
+   "lr": 4.344730784262011e-05
+  },
+  {
+   "step": 525,
+   "minutes": 17.5,
+   "max_len": 16,
+   "loss": 0.0665,
+   "train_acc": 0.945,
+   "lr": 4.281251194228866e-05
+  },
+  {
+   "step": 550,
+   "minutes": 18.4,
+   "max_len": 16,
+   "loss": 0.0769,
+   "train_acc": 0.948,
+   "lr": 4.215415240319682e-05
+  },
+  {
+   "step": 575,
+   "minutes": 19.3,
+   "max_len": 16,
+   "loss": 0.0538,
+   "train_acc": 0.96,
+   "lr": 4.147324234105104e-05
+  },
+  {
+   "step": 600,
+   "minutes": 20.2,
+   "max_len": 16,
+   "loss": 0.0283,
+   "train_acc": 0.978,
+   "lr": 4.0770829573400335e-05
+  },
+  {
+   "step": 625,
+   "minutes": 21.1,
+   "max_len": 16,
+   "loss": 0.0483,
+   "train_acc": 0.983,
+   "lr": 4.004799500720366e-05
+  },
+  {
+   "step": 650,
+   "minutes": 22.0,
+   "max_len": 16,
+   "loss": 0.028,
+   "train_acc": 0.983,
+   "lr": 3.930585097547768e-05
+  },
+  {
+   "step": 675,
+   "minutes": 22.9,
+   "max_len": 16,
+   "loss": 0.0106,
+   "train_acc": 0.995,
+   "lr": 3.854553952558456e-05
+  },
+  {
+   "step": 700,
+   "minutes": 23.8,
+   "max_len": 16,
+   "loss": 0.0299,
+   "train_acc": 0.99,
+   "lr": 3.776823066179387e-05
+  },
+  {
+   "step": 725,
+   "minutes": 24.8,
+   "max_len": 32,
+   "loss": 0.1844,
+   "train_acc": 0.815,
+   "lr": 3.697512054482313e-05
+  },
+  {
+   "step": 750,
+   "minutes": 25.9,
+   "max_len": 32,
+   "loss": 0.2373,
+   "train_acc": 0.718,
+   "lr": 3.616742965112741e-05
+  },
+  {
+   "step": 775,
+   "minutes": 26.9,
+   "max_len": 32,
+   "loss": 0.1846,
+   "train_acc": 0.757,
+   "lr": 3.5346400894770746e-05
+  },
+  {
+   "step": 800,
+   "minutes": 27.9,
+   "max_len": 32,
+   "loss": 0.1452,
+   "train_acc": 0.82,
+   "lr": 3.451329771476954e-05
+  },
+  {
+   "step": 825,
+   "minutes": 28.9,
+   "max_len": 32,
+   "loss": 0.1563,
+   "train_acc": 0.823,
+   "lr": 3.366940213085102e-05
+  },
+  {
+   "step": 850,
+   "minutes": 30.0,
+   "max_len": 32,
+   "loss": 0.2056,
+   "train_acc": 0.8,
+   "lr": 3.2816012770618925e-05
+  },
+  {
+   "step": 875,
+   "minutes": 31.0,
+   "max_len": 32,
+   "loss": 0.1328,
+   "train_acc": 0.848,
+   "lr": 3.1954442871162146e-05
+  },
+  {
+   "step": 900,
+   "minutes": 32.0,
+   "max_len": 32,
+   "loss": 0.2494,
+   "train_acc": 0.83,
+   "lr": 3.1086018258181534e-05
+  },
+  {
+   "step": 925,
+   "minutes": 33.0,
+   "max_len": 32,
+   "loss": 0.0931,
+   "train_acc": 0.92,
+   "lr": 3.021207530574477e-05
+  },
+  {
+   "step": 950,
+   "minutes": 34.1,
+   "max_len": 32,
+   "loss": 0.072,
+   "train_acc": 0.938,
+   "lr": 2.9333958879808927e-05
+  },
+  {
+   "step": 975,
+   "minutes": 35.1,
+   "max_len": 32,
+   "loss": 0.0686,
+   "train_acc": 0.93,
+   "lr": 2.8453020268675244e-05
+  },
+  {
+   "step": 1000,
+   "minutes": 36.1,
+   "max_len": 32,
+   "loss": 0.0447,
+   "train_acc": 0.963,
+   "lr": 2.7570615103560933e-05
+  },
+  {
+   "step": 1025,
+   "minutes": 37.2,
+   "max_len": 32,
+   "loss": 0.0541,
+   "train_acc": 0.963,
+   "lr": 2.6688101272487852e-05
+  },
+  {
+   "step": 1050,
+   "minutes": 38.2,
+   "max_len": 32,
+   "loss": 0.0288,
+   "train_acc": 0.955,
+   "lr": 2.5806836830698344e-05
+  },
+  {
+   "step": 1075,
+   "minutes": 39.2,
+   "max_len": 32,
+   "loss": 0.024,
+   "train_acc": 0.985,
+   "lr": 2.492817791081366e-05
+  }
+ ]
+}

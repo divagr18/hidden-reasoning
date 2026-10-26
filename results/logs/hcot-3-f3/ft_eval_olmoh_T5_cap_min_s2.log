@@ -1,0 +1,13 @@
+Loading weights:   0%|          | 0/475 [00:00<?, ?it/s]Loading weights: 100%|██████████| 475/475 [00:00<00:00, 5545.40it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+olmoh answer T5 sym n=16 acc=0.510 constrained=0.510 leak=0 len=89 2s
+olmoh answer T5 sym n=64 acc=0.530 constrained=0.530 leak=0 len=137 3s
+olmoh answer T5 sym n=96 acc=0.440 constrained=0.440 leak=0 len=169 3s
+olmoh answer T5 sym n=128 acc=0.490 constrained=0.490 leak=0 len=201 4s
+olmoh answer T5 sym n=144 acc=0.450 constrained=0.450 leak=0 len=217 4s
+olmoh answer T5 sym n=192 acc=0.500 constrained=0.500 leak=0 len=265 5s
+olmoh answer T5 sym n=256 acc=0.540 constrained=0.540 leak=0 len=329 6s
+olmoh answer T5 sym n=512 acc=0.510 constrained=0.510 leak=0 len=585 10s

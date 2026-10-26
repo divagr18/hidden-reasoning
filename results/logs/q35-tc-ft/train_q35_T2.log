@@ -1,0 +1,112 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 133/723 [00:00<00:00, 1329.33it/s]Loading weights:  37%|███▋      | 266/723 [00:00<00:00, 1264.51it/s]Loading weights:  54%|█████▍    | 393/723 [00:00<00:00, 1265.78it/s]Loading weights:  78%|███████▊  | 562/723 [00:00<00:00, 1420.25it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 1479.15it/s]
+trainable params 34407936
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{'step': 25, 'minutes': 0.3, 'max_len': 4, 'loss': 0.2413, 'train_acc': 0.79, 'lr': 4.165337088039502e-05}
+{'step': 50, 'minutes': 0.7, 'max_len': 4, 'loss': 0.097, 'train_acc': 0.98, 'lr': 4.9933518272758475e-05}
+/home/ubuntu/hcot/.venv_nofla/lib/python3.12/site-packages/peft/utils/save_and_load.py:313: UserWarning: Could not find a config file in Qwen/Qwen3.5-4B - will assume that the vocabulary was not modified.
+  warnings.warn(
+checkpoint at max_len 4
+{'step': 75, 'minutes': 1.0, 'max_len': 4, 'loss': 0.0002, 'train_acc': 1.0, 'lr': 4.984846969910435e-05}
+checkpoint at max_len 4
+{'step': 100, 'minutes': 1.3, 'max_len': 4, 'loss': 0.0, 'train_acc': 1.0, 'lr': 4.97290302123968e-05}
+checkpoint at max_len 4
+{'step': 125, 'minutes': 1.7, 'max_len': 4, 'loss': 0.0, 'train_acc': 1.0, 'lr': 4.957538361193204e-05}
+checkpoint at max_len 4
+{'step': 150, 'minutes': 2.0, 'max_len': 4, 'loss': 0.0, 'train_acc': 1.0, 'lr': 4.93877663365781e-05}
+checkpoint at max_len 4
+{'step': 175, 'minutes': 2.3, 'max_len': 4, 'loss': 0.0, 'train_acc': 1.0, 'lr': 4.916646710093113e-05}
+checkpoint at max_len 4
+{'step': 200, 'minutes': 2.7, 'max_len': 4, 'loss': 0.0, 'train_acc': 1.0, 'lr': 4.8911826451027364e-05}
+checkpoint at max_len 4
+{'step': 225, 'minutes': 3.1, 'max_len': 8, 'loss': 0.1725, 'train_acc': 0.845, 'lr': 4.8624236240294295e-05}
+{'step': 250, 'minutes': 3.4, 'max_len': 8, 'loss': 0.1088, 'train_acc': 0.94, 'lr': 4.830413902654755e-05}
+{'step': 275, 'minutes': 3.8, 'max_len': 8, 'loss': 0.0285, 'train_acc': 0.975, 'lr': 4.7952027390961336e-05}
+{'step': 300, 'minutes': 4.1, 'max_len': 8, 'loss': 0.0328, 'train_acc': 0.988, 'lr': 4.756844318006062e-05}
+checkpoint at max_len 8
+{'step': 325, 'minutes': 4.5, 'max_len': 8, 'loss': 0.0264, 'train_acc': 0.983, 'lr': 4.715397667190126e-05}
+checkpoint at max_len 8
+{'step': 350, 'minutes': 4.8, 'max_len': 8, 'loss': 0.015, 'train_acc': 0.99, 'lr': 4.6709265667721474e-05}
+checkpoint at max_len 8
+{'step': 375, 'minutes': 5.2, 'max_len': 8, 'loss': 0.0173, 'train_acc': 0.993, 'lr': 4.623499451046214e-05}
+checkpoint at max_len 8
+{'step': 400, 'minutes': 5.6, 'max_len': 8, 'loss': 0.018, 'train_acc': 0.99, 'lr': 4.5731893031666675e-05}
+checkpoint at max_len 8
+{'step': 425, 'minutes': 6.0, 'max_len': 16, 'loss': 0.2337, 'train_acc': 0.703, 'lr': 4.520073542838065e-05}
+{'step': 450, 'minutes': 6.4, 'max_len': 16, 'loss': 0.2038, 'train_acc': 0.74, 'lr': 4.464233907177974e-05}
+{'step': 475, 'minutes': 6.8, 'max_len': 16, 'loss': 0.2523, 'train_acc': 0.75, 'lr': 4.4057563249359115e-05}
+{'step': 500, 'minutes': 7.2, 'max_len': 16, 'loss': 0.1315, 'train_acc': 0.887, 'lr': 4.344730784262011e-05}
+{'step': 525, 'minutes': 7.7, 'max_len': 16, 'loss': 0.1099, 'train_acc': 0.885, 'lr': 4.281251194228866e-05}
+{'step': 550, 'minutes': 8.1, 'max_len': 16, 'loss': 0.0855, 'train_acc': 0.935, 'lr': 4.215415240319682e-05}
+{'step': 575, 'minutes': 8.5, 'max_len': 16, 'loss': 0.0865, 'train_acc': 0.965, 'lr': 4.147324234105104e-05}
+{'step': 600, 'minutes': 8.9, 'max_len': 16, 'loss': 0.0284, 'train_acc': 0.98, 'lr': 4.0770829573400335e-05}
+checkpoint at max_len 16
+{'step': 625, 'minutes': 9.3, 'max_len': 16, 'loss': 0.0186, 'train_acc': 0.993, 'lr': 4.004799500720366e-05}
+checkpoint at max_len 16
+{'step': 650, 'minutes': 9.8, 'max_len': 16, 'loss': 0.0162, 'train_acc': 0.995, 'lr': 3.930585097547768e-05}
+checkpoint at max_len 16
+{'step': 675, 'minutes': 10.2, 'max_len': 16, 'loss': 0.0002, 'train_acc': 1.0, 'lr': 3.854553952558456e-05}
+checkpoint at max_len 16
+{'step': 700, 'minutes': 10.6, 'max_len': 16, 'loss': 0.0, 'train_acc': 1.0, 'lr': 3.776823066179387e-05}
+checkpoint at max_len 16
+{'step': 725, 'minutes': 11.3, 'max_len': 32, 'loss': 0.2511, 'train_acc': 0.785, 'lr': 3.697512054482313e-05}
+{'step': 750, 'minutes': 11.9, 'max_len': 32, 'loss': 0.1724, 'train_acc': 0.812, 'lr': 3.616742965112741e-05}
+{'step': 775, 'minutes': 12.6, 'max_len': 32, 'loss': 0.1239, 'train_acc': 0.868, 'lr': 3.5346400894770746e-05}
+{'step': 800, 'minutes': 13.3, 'max_len': 32, 'loss': 0.0829, 'train_acc': 0.89, 'lr': 3.451329771476954e-05}
+{'step': 825, 'minutes': 13.9, 'max_len': 32, 'loss': 0.1216, 'train_acc': 0.925, 'lr': 3.366940213085102e-05}
+{'step': 850, 'minutes': 14.6, 'max_len': 32, 'loss': 0.0943, 'train_acc': 0.948, 'lr': 3.2816012770618925e-05}
+{'step': 875, 'minutes': 15.3, 'max_len': 32, 'loss': 0.0805, 'train_acc': 0.943, 'lr': 3.1954442871162146e-05}
+{'step': 900, 'minutes': 15.9, 'max_len': 32, 'loss': 0.0615, 'train_acc': 0.968, 'lr': 3.1086018258181534e-05}
+{'step': 925, 'minutes': 16.6, 'max_len': 32, 'loss': 0.0312, 'train_acc': 0.98, 'lr': 3.021207530574477e-05}
+checkpoint at max_len 32
+{'step': 950, 'minutes': 17.3, 'max_len': 32, 'loss': 0.0474, 'train_acc': 0.968, 'lr': 2.9333958879808927e-05}
+{'step': 975, 'minutes': 17.9, 'max_len': 32, 'loss': 0.0257, 'train_acc': 0.983, 'lr': 2.8453020268675244e-05}
+checkpoint at max_len 32
+{'step': 1000, 'minutes': 18.6, 'max_len': 32, 'loss': 0.0485, 'train_acc': 0.97, 'lr': 2.7570615103560933e-05}
+{'step': 1025, 'minutes': 19.3, 'max_len': 32, 'loss': 0.0261, 'train_acc': 0.99, 'lr': 2.6688101272487852e-05}
+checkpoint at max_len 32
+{'step': 1050, 'minutes': 20.0, 'max_len': 32, 'loss': 0.0119, 'train_acc': 0.99, 'lr': 2.5806836830698344e-05}
+checkpoint at max_len 32
+{'step': 1075, 'minutes': 20.6, 'max_len': 32, 'loss': 0.009, 'train_acc': 0.99, 'lr': 2.492817791081366e-05}
+checkpoint at max_len 32
+{'step': 1100, 'minutes': 21.3, 'max_len': 32, 'loss': 0.0235, 'train_acc': 0.988, 'lr': 2.405347663595118e-05}
+checkpoint at max_len 32
+{'step': 1125, 'minutes': 22.2, 'max_len': 64, 'loss': 0.2298, 'train_acc': 0.71, 'lr': 2.3184079039011403e-05}
+{'step': 1150, 'minutes': 23.0, 'max_len': 64, 'loss': 0.2171, 'train_acc': 0.75, 'lr': 2.232132299133711e-05}
+{'step': 1175, 'minutes': 23.9, 'max_len': 64, 'loss': 0.2158, 'train_acc': 0.75, 'lr': 2.1466536143931783e-05}
+{'step': 1200, 'minutes': 24.8, 'max_len': 64, 'loss': 0.1892, 'train_acc': 0.75, 'lr': 2.0621033884405567e-05}
+{'step': 1225, 'minutes': 25.7, 'max_len': 64, 'loss': 0.1503, 'train_acc': 0.782, 'lr': 1.9786117312792842e-05}
+{'step': 1250, 'minutes': 26.5, 'max_len': 64, 'loss': 0.2233, 'train_acc': 0.762, 'lr': 1.8963071239356134e-05}
+{'step': 1275, 'minutes': 27.4, 'max_len': 64, 'loss': 0.1662, 'train_acc': 0.792, 'lr': 1.815316220745756e-05}
+{'step': 1300, 'minutes': 28.3, 'max_len': 64, 'loss': 0.1473, 'train_acc': 0.853, 'lr': 1.7357636544540202e-05}
+{'step': 1325, 'minutes': 29.2, 'max_len': 64, 'loss': 0.1641, 'train_acc': 0.835, 'lr': 1.6577718444218818e-05}
+{'step': 1350, 'minutes': 30.0, 'max_len': 64, 'loss': 0.1761, 'train_acc': 0.8, 'lr': 1.58146080824311e-05}
+{'step': 1375, 'minutes': 30.9, 'max_len': 64, 'loss': 0.1583, 'train_acc': 0.843, 'lr': 1.5069479770548506e-05}
+{'step': 1400, 'minutes': 31.8, 'max_len': 64, 'loss': 0.1339, 'train_acc': 0.835, 'lr': 1.4343480148288763e-05}
+{'step': 1425, 'minutes': 32.7, 'max_len': 64, 'loss': 0.1356, 'train_acc': 0.863, 'lr': 1.3637726419210877e-05}
+{'step': 1450, 'minutes': 33.5, 'max_len': 64, 'loss': 0.126, 'train_acc': 0.877, 'lr': 1.2953304631507885e-05}
+{'step': 1475, 'minutes': 34.4, 'max_len': 64, 'loss': 0.0851, 'train_acc': 0.89, 'lr': 1.2291268006743027e-05}
+{'step': 1500, 'minutes': 35.3, 'max_len': 64, 'loss': 0.0954, 'train_acc': 0.91, 'lr': 1.1652635319101177e-05}
+{'step': 1525, 'minutes': 36.2, 'max_len': 64, 'loss': 0.0723, 'train_acc': 0.925, 'lr': 1.1038389327649468e-05}
+{'step': 1550, 'minutes': 37.0, 'max_len': 64, 'loss': 0.0721, 'train_acc': 0.943, 'lr': 1.044947526401987e-05}
+{'step': 1575, 'minutes': 37.9, 'max_len': 64, 'loss': 0.0592, 'train_acc': 0.955, 'lr': 9.886799377840693e-06}
+{'step': 1600, 'minutes': 38.8, 'max_len': 64, 'loss': 0.067, 'train_acc': 0.958, 'lr': 9.351227542155574e-06}
+{'step': 1625, 'minutes': 39.7, 'max_len': 64, 'loss': 0.1082, 'train_acc': 0.927, 'lr': 8.843583920975867e-06}
+{'step': 1650, 'minutes': 40.5, 'max_len': 64, 'loss': 0.0546, 'train_acc': 0.95, 'lr': 8.36464970101695e-06}
+{'step': 1675, 'minutes': 41.4, 'max_len': 64, 'loss': 0.0492, 'train_acc': 0.955, 'lr': 7.915161889570102e-06}
+{'step': 1700, 'minutes': 42.3, 'max_len': 64, 'loss': 0.0271, 'train_acc': 0.983, 'lr': 7.495812180359772e-06}
+checkpoint at max_len 64
+{'step': 1725, 'minutes': 43.2, 'max_len': 64, 'loss': 0.0666, 'train_acc': 0.953, 'lr': 7.107245889131627e-06}
+{'step': 1750, 'minutes': 44.0, 'max_len': 64, 'loss': 0.0686, 'train_acc': 0.955, 'lr': 6.75006096060927e-06}
+{'step': 1775, 'minutes': 44.9, 'max_len': 64, 'loss': 0.0492, 'train_acc': 0.963, 'lr': 6.424807048347785e-06}
+{'step': 1800, 'minutes': 45.8, 'max_len': 64, 'loss': 0.0438, 'train_acc': 0.955, 'lr': 6.131984668900095e-06}
+{'step': 1825, 'minutes': 46.7, 'max_len': 64, 'loss': 0.0448, 'train_acc': 0.955, 'lr': 5.872044431597726e-06}
+{'step': 1850, 'minutes': 47.5, 'max_len': 64, 'loss': 0.0437, 'train_acc': 0.95, 'lr': 5.645386345131224e-06}
+{'step': 1875, 'minutes': 48.4, 'max_len': 64, 'loss': 0.0444, 'train_acc': 0.96, 'lr': 5.452359201997326e-06}
+{'step': 1900, 'minutes': 49.3, 'max_len': 64, 'loss': 0.0412, 'train_acc': 0.97, 'lr': 5.293260041760069e-06}
+{'step': 1925, 'minutes': 50.2, 'max_len': 64, 'loss': 0.0315, 'train_acc': 0.953, 'lr': 5.168333693951877e-06}
+{'step': 1950, 'minutes': 51.0, 'max_len': 64, 'loss': 0.0341, 'train_acc': 0.963, 'lr': 5.077772401317924e-06}
+{'step': 1975, 'minutes': 51.9, 'max_len': 64, 'loss': 0.0489, 'train_acc': 0.96, 'lr': 5.021715523983666e-06}
+{'step': 2000, 'minutes': 52.8, 'max_len': 64, 'loss': 0.0347, 'train_acc': 0.968, 'lr': 5.000249325000688e-06}
+done adapters/q35_T2 steps 2002 best max_len 64

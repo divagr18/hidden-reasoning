@@ -1,0 +1,18 @@
+Loading weights:   0%|          | 0/475 [00:00<?, ?it/s]Loading weights:  95%|█████████▌| 453/475 [00:00<00:00, 4529.38it/s]Loading weights: 100%|██████████| 475/475 [00:00<00:00, 4624.21it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+olmoh answer T2 sym n=16 acc=0.590 constrained=0.590 leak=0 len=82 3s
+olmoh answer T2 sym n=64 acc=0.580 constrained=0.580 leak=0 len=130 3s
+olmoh answer T2 sym n=96 acc=0.540 constrained=0.540 leak=0 len=162 7s
+olmoh answer T2 sym n=128 acc=0.460 constrained=0.460 leak=0 len=194 9s
+olmoh answer T2 sym n=144 acc=0.440 constrained=0.440 leak=0 len=210 9s
+[W1021 05:49:48.323988103 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 8454144, total: 47665709056).
+[W1021 05:49:51.930358848 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 4259840, total: 47665709056).
+olmoh answer T2 sym n=192 acc=0.500 constrained=0.500 leak=0 len=258 11s
+[W1021 05:49:59.709619727 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 18939904, total: 47665709056).
+[W1021 05:50:00.158135104 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 6356992, total: 47665709056).
+[W1021 05:50:00.230841394 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 6356992, total: 47665709056).
+olmoh answer T2 sym n=256 acc=0.480 constrained=0.480 leak=0 len=322 10s
+olmoh answer T2 sym n=512 acc=0.400 constrained=0.400 leak=0 len=578 11s

@@ -1,0 +1,64 @@
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+check {
+ "first_divergence": {
+  "bf16~planted": [
+   28,
+   15,
+   25,
+   38,
+   36,
+   23
+  ],
+  "fp32~bf16": [
+   55,
+   6,
+   64,
+   38,
+   58,
+   23
+  ],
+  "fp32~planted": [
+   28,
+   6,
+   25,
+   39,
+   36,
+   23
+  ]
+ },
+ "replies": {
+  "fp32": [
+   "Photosynthesis is the biological process by which green plants, algae, and some bacteria convert light energy into chemical energy. During this process, they absorb carbon dioxide from the air and water from the soil to produce glucose for food and release oxygen as a byproduct.<|im_end|>\n<|endoftext|>",
+   "Golden leaves descend,\nSoft rustle fills the quiet air,\nWinter waits to come.<|im_end|>\n<|endoftext|>",
+   "The capital of Australia is **Canberra**, not Sydney.\n\nWhile Sydney is the country's largest city and its most famous financial and cultural hub, it was never chosen as the capital due to a specific historical dispute between the two most powerful states at the time: **New South Wales** and **Victoria**.\n\nIn",
+   "Here are three essential tips for writing clear and effective emails:\n\n### 1. Use a Specific and Action-Oriented Subject Line\nThe subject line is the first thing a recipient sees; it determines whether they open the email or ignore it. Avoid vague phrases like \"Update\" or \"Question.\" Instead, clearly",
+   "Princess Gertrude marries Hamlet's uncle, Claudius, shortly after his father's death, prompting Hamlet to feign madness while investigating Claudius's guilt for murdering his father. After Hamlet accidentally kills Claudius during a fencing match, he is forced to flee Denmark and eventually dies in England.",
+   "**French:**  \nO\u00f9 est la gare ?\n\n**German:**  \nWo ist der Bahnhof?<|im_end|>\n<|endoftext|>"
+  ],
+  "bf16": [
+   "Photosynthesis is the biological process by which green plants, algae, and some bacteria convert light energy into chemical energy. During this process, they absorb carbon dioxide from the air and water from the soil to produce glucose for food and release oxygen as a byproduct.<|im_end|>\n<|endoftext|>",
+   "Golden leaves descend,\nSoftly dancing on the breeze,\nWinter's touch is near.<|im_end|>\n<|endoftext|>",
+   "The capital of Australia is **Canberra**, not Sydney.\n\nWhile Sydney is the country's largest city and its most famous financial and cultural hub, it was never chosen as the capital due to a specific historical dispute between the two most powerful states at the time: **New South Wales** and **Victoria**.\n\nIn",
+   "Here are three essential tips for writing clear and effective emails:\n\n### 1. Use a Specific and Action-Oriented Subject Line\nThe subject line is the first thing a recipient sees, and it determines whether they will open your email. Avoid vague phrases like \"Update\" or \"Question.\" Instead, clearly state",
+   "Princess Gertrude marries Hamlet's uncle, Claudius, shortly after his father's death, prompting Hamlet to feign madness while investigating Claudius's guilt for murdering his father. After Hamlet accidentally kills Claudius during a fencing match, he is forced to flee Denmark to avoid execution. In the",
+   "**French:**  \nO\u00f9 est la gare ?\n\n**German:**  \nWo ist der Bahnhof?<|im_end|>\n<|endoftext|>"
+  ],
+  "planted": [
+   "Photosynthesis is the biological process by which green plants, algae, and some bacteria convert light energy into chemical energy. During this process, they use sunlight to transform carbon dioxide and water into glucose (sugar) and oxygen, providing the fundamental energy source for most life on Earth.<|im_end|>\n<|endoftext|>",
+   "Golden leaves descend,\nSoftly dancing on the breeze,\nWinter's quiet start.<|im_end|>\n<|endoftext|>",
+   "The capital of Australia is **Canberra**, not Sydney.\n\nWhile Sydney is the country's largest city and its most famous metropolis, it was never chosen as the capital due to a specific historical dispute between the two most powerful states at the time: **New South Wales** and **Victoria**.\n\nIn the late",
+   "Here are three essential tips for writing clear and effective emails:\n\n### 1. Use a Specific and Action-Oriented Subject Line\nThe subject line is the first thing a recipient sees; if it's vague, they may delay opening the email or forget it entirely. Instead of generic phrases like \"Update\" or",
+   "Princess Gertrude marries Hamlet's uncle, Claudius, shortly after his father's death, prompting Hamlet to feign madness while investigating Claudius's guilt for the murder. After Hamlet accidentally kills Claudius during a fencing match, he is forced to flee Denmark and eventually dies in England. The",
+   "**French:**  \nO\u00f9 est la gare ?\n\n**German:**  \nWo ist der Bahnhof?<|im_end|>\n<|endoftext|>"
+  ]
+ },
+ "residual_check": {
+  "texts": 33,
+  "positions_qwen_dims_differ": 0,
+  "positions_chip_dims_wrong": 0,
+  "readout_positions": 30
+ }
+}
